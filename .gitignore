@@ -1,0 +1,4 @@
+# Bỏ qua file .env
+.env
+node_modules/
+sendgrid-project/node_modules

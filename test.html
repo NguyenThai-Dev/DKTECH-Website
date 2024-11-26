@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .product_detail {
+            width: 25rem;
+            display: flex;
+            gap: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product_display {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product_display img {
+            width: 10rem;
+            height: 15rem;
+            border-radius: 8px;
+        }
+
+        .product_info {
+            flex: 2;
+            min-width: 10rem;
+        }
+
+        .product_type,
+        .product_name {
+            margin: 0;
+        }
+
+        .product_benefit {
+            margin-bottom: -10px;
+        }
+
+        .volume_btn {
+            padding: 10px 15px;
+            margin-right: 10px;
+            background: #ddd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .volume_btn:hover {
+            background: rgb(3, 52, 181);
+            color: white;
+        }
+
+        .volume_btn.active {
+            background: rgb(3, 52, 181);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="product_detail">
+            <div class="product_display">
+                <img class="product_image" src="./img/dautest.jpg" alt="Sản phẩm 20L">
+            </div>
+            <div class="product_info">
+                <h2 class="product_type">SHL</h2>
+                <h2 class="product_name">SYNTHDRO 32AW</h2>
+                <p class="product_benefit"><strong>Công dụng:</strong> Tăng hiệu quả bôi trơn và bảo vệ động cơ.</p>
+                <p class="product_volume"><strong>Thể tích:</strong> <span class="current_volume">20L</span></p>
+                <div class="volume_options">
+                    <button class="volume_btn active" data-volume="20L" data-image="./img/dautest.jpg">20L</button>
+                    <button class="volume_btn" data-volume="200L"
+                        data-image="./img/cnc machine working.jpg">200L</button>
+                </div>
+            </div>
+        </div>
+        <div class="product_detail">
+            <div class="product_display">
+                <img class="product_image" src="./img/dautest.jpg" alt="Sản phẩm 20L">
+            </div>
+            <div class="product_info">
+                <h2 class="product_type">SHL</h2>
+                <h2 class="product_name">SAMLEX HP 5025V</h2>
+                <p class="product_benefit"><strong>Công dụng:</strong> Tăng hiệu quả bôi trơn và bảo vệ động cơ.</p>
+                <p class="product_volume"><strong>Thể tích:</strong> <span class="current_volume">20L</span></p>
+                <div class="volume_options">
+                    <button class="volume_btn active" data-volume="20L" data-image="./img/dautest.jpg">20L</button>
+                    <button class="volume_btn" data-volume="200L"
+                        data-image="./img/cnc machine working.jpg">200L</button>
+                </div>
+            </div>
+        </div>
+        <div class="product_detail">
+            <div class="product_display">
+                <img class="product_image" src="./img/dautest.jpg" alt="Sản phẩm 20L">
+            </div>
+            <div class="product_info">
+                <h2 class="product_type">SHL</h2>
+                <h2 class="product_name">SAMLEX WAXY 70A</h2>
+                <p class="product_benefit"><strong>Công dụng:</strong> Tăng hiệu quả bôi trơn và bảo vệ động cơ.</p>
+                <p class="product_volume"><strong>Thể tích:</strong> <span class="current_volume">20L</span></p>
+                <div class="volume_options">
+                    <button class="volume_btn active" data-volume="20L" data-image="./img/dautest.jpg">20L</button>
+                    <button class="volume_btn" data-volume="200L"
+                        data-image="./img/cnc machine working.jpg">200L</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelectorAll(".product_detail").forEach((productDetail) => {
+            const image = productDetail.querySelector(".product_image");
+            const volumeButtons = productDetail.querySelectorAll(".volume_btn");
+            const currentVolume = productDetail.querySelector(".current_volume"); // Sửa đúng class
+
+            volumeButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    // Update ảnh và thể tích
+                    const newImage = button.dataset.image;
+                    const newVolume = button.dataset.volume;
+                    image.src = newImage;
+                    currentVolume.textContent = newVolume;
+
+                    // Xử lý active
+                    volumeButtons.forEach((btn) => btn.classList.remove("active"));
+                    button.classList.add("active");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
