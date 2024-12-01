@@ -5,6 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: #333;
     line-height: 1.6;
+    user-select: none;
 }
 
 /*chỉ chạy sau khi code xong*/
@@ -81,10 +82,9 @@ header {
 }
 
 #confirm_an_action {
+    width: 25rem;
     padding: 1rem;
-    position: absolute;
-    top: 45%;
-    left: 40%;
+    margin: 45vh auto;
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -93,6 +93,7 @@ header {
     p {
         font-family: 'Lora', serif;
         font-size: 1.2rem;
+        text-align: center;
     }
 
     div {
@@ -103,11 +104,10 @@ header {
         gap: 10px;
 
         button {
-            width: 8vw;
-            height: 6vh;
+            width: 7rem;
             font-size: 1.1rem;
             font-family: 'Lora', serif;
-            padding: 0.2rem;
+            padding: 0.3rem;
             color: white;
             background-color: rgb(3, 52, 181);
             border: none;
@@ -196,7 +196,7 @@ header {
 #navbar_pc_menu_item {
     display: none;
     width: 25.8%;
-    height: 6.55rem;
+    height: auto;
     backdrop-filter: blur(10px);
     position: absolute;
     top: 50%;
@@ -330,6 +330,9 @@ header {
             background-color: rgb(3, 52, 181);
             padding: 0 10px 0 20px;
             position: relative;
+            display: flex;
+            flex: row;
+            justify-content: space-between;
             opacity: 0;
 
             >a {
@@ -340,13 +343,26 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
-                i {
-                    color: #fff;
-                    font-size: 1.2rem;
-                    font-weight: 550;
-                }
             }
+
+            i {
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 550;
+                margin-top: 5px;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+            .right-arrow {
+                transform: rotate(0deg);
+                transition: transform 1s ease;
+            }
+
+            .down-arrow {
+                transform: rotate(90deg);
+                transition: transform 1s ease;
+            }
+
         }
     }
 }
@@ -382,7 +398,7 @@ header {
     left: 50%;
     width: 0;
     height: 100%;
-    background-color: rgb(5, 101, 179);
+    background-color: rgb(34, 193, 195);
     transform: translate(0, -50%);
     transition: width 0.6s ease, left 0.6s ease;
     z-index: -1;
@@ -396,21 +412,6 @@ header {
 #navbar_phone>ul>li:not(:hover)::before {
     width: 0;
     left: 0;
-}
-
-@media (max-width: 850px) {
-    #navbar_pc {
-        display: none;
-    }
-
-    #navbar_toggle {
-        display: block;
-    }
-
-    #header_logo {
-        width: 100%;
-        flex-direction: column;
-    }
 }
 
 #navbar_phone_menu_item,
@@ -429,6 +430,9 @@ header {
 
     li {
         padding: 0 10px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
         a {
             color: black;
@@ -438,13 +442,26 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
-            i {
-                color: black;
-                font-size: 1.2rem;
-                font-weight: 550;
-            }
         }
+
+        i {
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 550;
+            margin-top: 5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .right-arrow {
+            transform: rotate(0deg);
+            transition: transform 1s ease;
+        }
+
+        .down-arrow {
+            transform: rotate(90deg);
+            transition: transform 1s ease;
+        }
+
     }
 
     li:hover {
@@ -454,11 +471,12 @@ header {
             color: white;
             font-size: 1.1rem;
             font-weight: 600;
-
-            i {
-                color: #fff;
-            }
         }
+
+        i {
+            color: #fff;
+        }
+
 
     }
 }
@@ -468,11 +486,12 @@ header {
 
     a {
         color: #fff !important;
-
-        i {
-            color: #fff;
-        }
     }
+
+    i {
+        color: #fff;
+    }
+
 }
 
 footer {
@@ -491,7 +510,6 @@ footer {
     h2 {
         font-size: 1.5rem;
         color: rgb(51, 51, 51);
-        text-align: left;
     }
 
     form {
@@ -501,7 +519,7 @@ footer {
 
         .form-group {
             position: relative;
-            align-self: flex-start;
+            align-self: center;
             padding-top: 1rem;
 
             input {
@@ -546,16 +564,16 @@ footer {
 
         button {
             outline: none;
-            height: 40px;
-            width: 130px;
+            width: 8rem;
+            height: 2.5rem;
             background: #fff;
             border: 2px solid rgb(3, 52, 181);
             letter-spacing: 1px;
             border-radius: 40px;
             font-size: 1rem;
             font-weight: bold;
-            cursor: pointer;
             align-self: flex-end;
+            cursor: pointer;
             transition: all 0.25s ease;
 
             span {
@@ -618,7 +636,6 @@ footer {
     h2 {
         font-size: 1.5rem;
         color: rgb(51, 51, 51);
-        text-align: left;
     }
 
     ul {
@@ -644,10 +661,11 @@ footer {
 }
 
 #social_connect {
+    width: 18rem;
+
     h2 {
         font-size: 1.5rem;
         color: rgb(51, 51, 51);
-        text-align: left;
     }
 
     #social_connect_facebook {
@@ -698,5 +716,36 @@ footer {
         background-color: #fff;
         border-radius: 5px;
     }
+}
 
+@media (max-width: 850px) {
+    #navbar_pc {
+        display: none;
+    }
+
+    #navbar_toggle {
+        display: block;
+    }
+
+    #header_logo {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #send_email_contact,
+    #quick_link,
+    #support_list,
+    #social_connect {
+        /* width: 100%; */
+        padding: 1rem;
+        box-sizing: border-box;
+        text-align: center;
+        align-self: center;
+    }
 }

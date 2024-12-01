@@ -69,6 +69,8 @@ function slideDownLi(navbar) {
         }
     }, navbar_items.length * 50);
 }
+
+//quản lí navbar phone
 function toggleNavbar() {
     var navbar = document.getElementById("navbar_phone");
     var navbar_phone_menu_item = document.getElementById("navbar_phone_menu_item");
@@ -79,7 +81,6 @@ function toggleNavbar() {
         if (navbar_phone_menu_item.style.display === "block") slideUpLi(navbar_phone_menu_item);
         if (navbar_phone_menu_item_tectyl.style.display === "block") activeNavbarPhoneMenuItemType('navbar_phone_menu_item_tectyl', 'Tectyl');
         if (navbar_phone_menu_item_shl.style.display === "block") activeNavbarPhoneMenuItemType('navbar_phone_menu_item_shl', 'SHL');
-
     } else {
         slideDownNavbar(navbar);
     }
@@ -100,6 +101,7 @@ const navbar_pc_menu = document.getElementById("navbar_pc_menu_item");
 const navbar_pc_menu_tectyl = document.querySelector("#navbar_pc_menu_item li:nth-child(1)");
 const navbar_pc_menu_item_tectyl = document.getElementById("navbar_pc_menu_item_tectyl");
 const navbar_pc_menu_shl = document.querySelector("#navbar_pc_menu_item li:nth-child(2)");
+const navbar_pc_menu_mobil = document.querySelector("#navbar_pc_menu_item li:nth-child(3)");
 const navbar_pc_menu_item_shl = document.getElementById("navbar_pc_menu_item_shl");
 const navbar_pc_menu_item_difference = document.querySelector("#navbar_pc_menu_item li:last-child");
 function isHovering(elements) {
@@ -111,6 +113,7 @@ navbar_pc_child.addEventListener("mouseenter", () => {
 navbar_pc_child.addEventListener("mouseleave", () => {
     if (!isHovering([
         navbar_pc_child,
+        navbar_pc_menu_mobil,
         navbar_pc_menu_item_difference,
         navbar_pc_menu_tectyl,
         navbar_pc_menu_item_tectyl,
@@ -128,6 +131,7 @@ navbar_pc_menu.addEventListener("mouseenter", () => {
 navbar_pc_menu.addEventListener("mouseleave", () => {
     if (!isHovering([
         navbar_pc_child,
+        navbar_pc_menu_mobil,
         navbar_pc_menu_item_difference,
         navbar_pc_menu_tectyl,
         navbar_pc_menu_item_tectyl,
@@ -160,7 +164,8 @@ navbar_pc_menu_item_tectyl.addEventListener("mouseleave", () => {
         navbar_pc_menu_item_tectyl,
         navbar_pc_menu_tectyl,
         navbar_pc_menu_shl,
-        navbar_pc_menu_item_difference
+        navbar_pc_menu_item_difference,
+        navbar_pc_menu_mobil
     ])) {
         slideUpLi(navbar_pc_menu_item_tectyl);
         slideUpLi(navbar_pc_menu);
@@ -171,7 +176,8 @@ navbar_pc_menu_item_shl.addEventListener("mouseleave", () => {
         navbar_pc_menu_item_shl,
         navbar_pc_menu_shl,
         navbar_pc_menu_item_difference,
-        navbar_pc_menu_tectyl
+        navbar_pc_menu_tectyl,
+        navbar_pc_menu_mobil
     ])) {
         slideUpLi(navbar_pc_menu_item_shl);
         setTimeout(() => {
@@ -183,7 +189,8 @@ navbar_pc_menu_item_difference.addEventListener("mouseleave", () => {
     if (!isHovering([
         navbar_pc_menu_item_difference,
         navbar_pc_menu_tectyl,
-        navbar_pc_menu_shl
+        navbar_pc_menu_shl,
+        navbar_pc_menu_mobil
     ])) {
         slideUpLi(navbar_pc_menu);
     }
@@ -196,6 +203,7 @@ navbar_pc_menu_shl.addEventListener("mouseenter", () => {
     navbar_pc_menu_item_tectyl.style.display = "none";
     slideDownLi(navbar_pc_menu_item_shl);
 });
+
 //tự động điều chỉnh kích thước một phần tử
 const item = document.querySelector("#navbar_pc ul li:nth-child(3)");
 const item_relative = document.getElementById("navbar_pc_menu_item");
@@ -205,6 +213,7 @@ function adjustWidth() {
 }
 adjustWidth();
 window.onresize = adjustWidth;
+
 //quản lý sự xuất hiện của navbar_phone
 function activeNavbarPhoneMenuItem(data) {
     var activeNavbar = document.getElementById(data);
@@ -337,3 +346,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+//ngăn hành vi chuột phải
+// document.addEventListener('contextmenu', function (event) {
+//     event.preventDefault(); // Ngăn không cho menu chuột phải xuất hiện
+// });
+
+//Hiệu ứng cho mũi tên
+function changeArrowDirection(icon) {
+    if (icon.classList.contains('right-arrow')) {
+        icon.classList.remove('right-arrow');
+        icon.classList.add('down-arrow');
+    } else {
+        icon.classList.remove('down-arrow');
+        icon.classList.add('right-arrow');
+    }
+}
+
+

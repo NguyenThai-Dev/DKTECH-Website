@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./main.css" />
-  <link rel="stylesheet" href="./index.css">
-  <link rel="icon" href="./img/LOGO DKTECH.png" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./css/img/LOGO DKTECH.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -23,7 +23,7 @@
 <body>
   <header>
     <div id="header_logo">
-      <img src="img/LOGO DKTECH.png" alt="Logo DKTECH">
+      <img src="./css/img/LOGO DKTECH.png" alt="Logo DKTECH">
       <div>
         <p>CÔNG TY TNHH THIẾT BỊ CÔNG NGHIỆP DKTECH VIỆT NAM</p>
         <p>Số 58, Đường N3-7, KĐT Sinh Thái Chánh Mỹ, Tổ 15, Khu Phố Mỹ Hảo 2, Phường Chánh Mỹ, Thành Phố Thủ Dầu Một,
@@ -57,11 +57,12 @@
   <nav>
     <div id="navbar_pc">
       <ul>
-        <li class="navbar_pc_item" style="background-color: rgb(0, 102, 255);"><a href="#">TRANG CHỦ</a></li>
+        <li class="navbar_pc_item" style="background-color: rgb(0, 102, 255);"><a href="./index.html"
+            style="color: #f2f2f2;">TRANG CHỦ</a></li>
         <li class="navbar_pc_item"><a href="#">GIỚI THIỆU</a></li>
         <li class="navbar_pc_item"><a href="#">DẦU NHỚT CHÍNH HÃNG</a></li>
         <li class="navbar_pc_item"><a href="#">DỊCH VỤ</a></li>
-        <li class="navbar_pc_item"><a href="#">TIN TỨC</a></li>
+        <li class="navbar_pc_item"><a href="./news.html">TIN TỨC</a></li>
         <li class="navbar_pc_item"><a href="./Contact.html">LIÊN HỆ</a></li>
       </ul>
     </div>
@@ -69,103 +70,110 @@
       <ul id="navbar_pc_menu_item">
         <li class="navbar_pc_menu_item_type"><a href="#">Tectyl</a></li>
         <li class="navbar_pc_menu_item_type"><a href="#">SHL</a></li>
+        <li class="navbar_pc_menu_item_type"><a href="#">MOBIL</a></li>
         <li class="navbar_pc_menu_item_type"><a href="#">Các loại khác</a></li>
       </ul>
       <ul id="navbar_pc_menu_item_tectyl">
         <li class="navbar_pc_item_type_tectyl">
-          <a href="#">Dầu chống rỉ RP 361</a>
+          <a href="./RP-361.html">Dầu chống rỉ RP 361</a>
         </li>
         <li class="navbar_pc_item_type_tectyl">
-          <a href="#">Dầu thủy lực công nghiệp HYDRAULIC 32</a>
+          <a href="./HYDRAULIC-32.html">Dầu thủy lực công nghiệp HYDRAULIC 32</a>
         </li>
         <li class="navbar_pc_item_type_tectyl">
-          <a href="#">Dầu rãnh trượt cao cấp WL 68A</a>
+          <a href="./WL-68A.html">Dầu rãnh trượt cao cấp WL 68A</a>
         </li>
       </ul>
       <ul id="navbar_pc_menu_item_shl">
         <li class="navbar_pc_item_type_shl">
-          <a href="#">Dầu nhờn trục quay SPINDLE V10</a>
+          <a href="./SPINDLE-V10.html">Dầu nhờn trục quay SPINDLE V10</a>
         </li>
         <li class="navbar_pc_item_type_shl">
-          <a href="#">Dầu nhờn trục quay SPINDLE V5</a>
+          <a href="./SPINDLE-V5.html">Dầu nhờn trục quay SPINDLE V5</a>
         </li>
         <li class="navbar_pc_item_type_shl">
-          <a href="#">Dầu thủy lực công nghiệp SYNTHDRO 32AW</a>
+          <a href="./SHL-SYNTHDRO-32AW.html">Dầu thủy lực công nghiệp SYNTHDRO 32AW</a>
         </li>
         <li class="navbar_pc_item_type_shl">
-          <a href="#">Dầu nhờn rãnh trượt SYNTHWAY 68M</a>
+          <a href="./SYNTHWAY-68M.html">Dầu nhờn rãnh trượt SYNTHWAY 68M</a>
         </li>
         <li class="navbar_pc_item_type_shl">
-          <a href="#">Dầu chống rỉ SAMLEX HP 5025V</a>
+          <a href="./SAMLEX-HP-5025V.html">Dầu chống rỉ SAMLEX HP 5025V</a>
         </li>
         <li class="navbar_pc_item_type_shl">
-          <a href="#">Sáp chống rỉ SAMLEX WAXY 70A</a>
+          <a href="./SAMLEX-WAXY-70A.html">Sáp chống rỉ SAMLEX WAXY 70A</a>
         </li>
       </ul>
     </div>
     <div id="navbar_toggle" onclick="toggleNavbar()">☰ Menu</div>
     <div id="navbar_phone">
       <ul>
-        <li class="navbar_phone_item"><a href="#">TRANG CHỦ</a></li>
+        <li class="navbar_phone_item" style="background-color: rgb(34, 193, 195);"><a href="./index.html"
+            style="color: #f2f2f2;">TRANG CHỦ</a></li>
         <li class="navbar_phone_item"><a href="#">GIỚI THIỆU</a></li>
-        <li class="navbar_phone_item" onclick="activeNavbarPhoneMenuItem('navbar_phone_menu_item')"><a href="#">DẦU NHỚT
-            CHÍNH HÃNG <i class="fa-solid fa-arrow-right"></i></a></li>
+        <li class="navbar_phone_item">
+          <a href="#">DẦU NHỚT CHÍNH HÃNG</a>
+          <i class="fa-solid fa-arrow-right right-arrow"
+            onclick="activeNavbarPhoneMenuItem('navbar_phone_menu_item');changeArrowDirection(this);"></i>
+        </li>
         <ul id="navbar_phone_menu_item">
-          <li class="navbar_phone_menu_item_type"
-            onclick="activeNavbarPhoneMenuItemType('navbar_phone_menu_item_tectyl', 'Tectyl')">
-            <a href="#">Tectyl <i class="fa-solid fa-arrow-right"></i></a>
+          <li class="navbar_phone_menu_item_type">
+            <a href="#">Tectyl</a>
+            <i class="fa-solid fa-arrow-right right-arrow"
+              onclick="activeNavbarPhoneMenuItemType('navbar_phone_menu_item_tectyl', 'Tectyl');changeArrowDirection(this);"></i>
           </li>
           <ul id="navbar_phone_menu_item_tectyl">
             <li class="navbar_phone_item_type_tectyl">
-              <a href="#">Dầu chống rỉ RP 361</a>
+              <a href="./RP-361.html">Dầu chống rỉ RP 361</a>
             </li>
             <li class="navbar_phone_item_type_tectyl">
-              <a href="#">Dầu thủy lực công nghiệp HYDRAULIC 32</a>
+              <a href="./HYDRAULIC-32.html">Dầu thủy lực công nghiệp HYDRAULIC 32</a>
             </li>
             <li class="navbar_phone_item_type_tectyl">
-              <a href="#">Dầu rãnh trượt cao cấp WL 68A</a>
+              <a href="./WL-68A.html">Dầu rãnh trượt cao cấp WL 68A</a>
             </li>
           </ul>
-          <li class="navbar_phone_menu_item_type"
-            onclick="activeNavbarPhoneMenuItemType('navbar_phone_menu_item_shl', 'SHL')">
-            <a href="#">SHL <i class="fa-solid fa-arrow-right"></i></a>
+          <li class="navbar_phone_menu_item_type">
+            <a href="#">SHL</a>
+            <i class="fa-solid fa-arrow-right right-arrow"
+              onclick="activeNavbarPhoneMenuItemType('navbar_phone_menu_item_shl', 'SHL');changeArrowDirection(this);"></i>
           </li>
           <ul id="navbar_phone_menu_item_shl">
             <li class="navbar_phone_item_type_shl">
-              <a href="#">Dầu nhờn trục quay SPINDLE V10</a>
+              <a href="./SPINDLE-V10.html">Dầu nhờn trục quay SPINDLE V10</a>
             </li>
             <li class="navbar_phone_item_type_shl">
-              <a href="#">Dầu nhờn trục quay SPINDLE V5</a>
+              <a href="./SPINDLE-V5.html">Dầu nhờn trục quay SPINDLE V5</a>
             </li>
             <li class="navbar_phone_item_type_shl">
-              <a href="#">Dầu thủy lực công nghiệp SYNTHDRO 32AW</a>
+              <a href="./SHL-SYNTHDRO-32AW.html">Dầu thủy lực công nghiệp SYNTHDRO 32AW</a>
             </li>
             <li class="navbar_phone_item_type_shl">
-              <a href="#">Dầu nhờn rãnh trượt SYNTHWAY 68M</a>
+              <a href="./SYNTHWAY-68M.html">Dầu nhờn rãnh trượt SYNTHWAY 68M</a>
             </li>
             <li class="navbar_phone_item_type_shl">
-              <a href="#">Dầu chống rỉ SAMLEX HP 5025V</a>
+              <a href="./SAMLEX-HP-5025V.html">Dầu chống rỉ SAMLEX HP 5025V</a>
             </li>
             <li class="navbar_phone_item_type_shl">
-              <a href="#">Sáp chống rỉ SAMLEX WAXY 70A</a>
+              <a href="./SAMLEX-WAXY-70A.html">Sáp chống rỉ SAMLEX WAXY 70A</a>
             </li>
           </ul>
+          <li class="navbar_phone_menu_item_type"><a href="#">MOBIL</a></li>
           <li class="navbar_phone_menu_item_type"><a href="#">Các loại khác</a></li>
         </ul>
         <li class="navbar_phone_item"><a href="#">DỊCH VỤ</a></li>
+        <li class="navbar_phone_item"><a href="./news.html">TIN TỨC</a></li>
         <li class="navbar_phone_item"><a href="./Contact.html">LIÊN HỆ</a></li>
       </ul>
     </div>
-    <div id="navbar_phone_support">
-    </div>
   </nav>
   <main>
-    <section>
+    <section id="img_change_slider">
       <div id="slider">
-        <img id="img-1" src="./img/cnc machine working.jpg" alt="Image 1" data-index="0" />
-        <img id="img-2" src="./img/beautiful-still-life-with-water.jpg" alt="Image 2" data-index="1" />
-        <img id="img-3" src="./img/cnc worker.jpg" alt="Image 3" data-index="2" />
-        <img id="img-4" src="./img/cnc factory.jpg" alt="Image 4" data-index="3" />
+        <img id="img-1" src="./css/img/cnc machine working.jpg" alt="Image 1" data-index="0" />
+        <img id="img-2" src="./css/img/beautiful-still-life-with-water.jpg" alt="Image 2" data-index="1" />
+        <img id="img-3" src="./css/img/cnc worker.jpg" alt="Image 3" data-index="2" />
+        <img id="img-4" src="./css/img/cnc factory.jpg" alt="Image 4" data-index="3" />
       </div>
       <div id="navigation-button">
         <span class="dot active" onclick="changeSlide(0)"></span>
@@ -173,6 +181,125 @@
         <span class="dot" onclick="changeSlide(2)"></span>
         <span class="dot" onclick="changeSlide(3)"></span>
       </div>
+    </section>
+    <section class="product_gallery">
+      <!-- Sản phẩm 1 -->
+      <a href="./SPINDLE-V10.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/SHL SPINDLE V10.jpg" alt="SPINDLE V10">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">SHL</h2>
+            <h2 class="product_name">SPINDLE V10</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu nhờn trục quay.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 2 -->
+      <a href="./SPINDLE-V5.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/SHL SPINDLE V5.jpg" alt="SPINDLE V5">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">SHL</h2>
+            <h2 class="product_name">SPINDLE V5</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu nhờn trục quay.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 3 -->
+      <a href="./SHL-SYNTHDRO-32AW.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/SHL SYNTHDRO 32AW.jpg" alt="SYNTHDRO 32AW">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">SHL</h2>
+            <h2 class="product_name">SYNTHDRO 32AW</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu thủy lực công nghiệp.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 4 -->
+      <a href="./SYNTHWAY-68M.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/SHL SYNTHWAY 68M.jpg" alt="SYNTHWAY 68M">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">SHL</h2>
+            <h2 class="product_name">SYNTHWAY 68M</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu nhờn rãnh trượt.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 5 -->
+      <a href="SAMLEX-HP-5025V.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/SHL SAMLEX HP 5025V.jpg" alt="SAMLEX HP 5025V">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">SHL</h2>
+            <h2 class="product_name">SAMLEX HP 5025V</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu chống rỉ.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 6 -->
+      <a href="SAMLEX-WAXY-70A.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/SHL SAMLEX WAXY 70A.jpg" alt="SAMLEX WAXY 70A">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">SHL</h2>
+            <h2 class="product_name">SAMLEX WAXY 70A</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Sáp chống rỉ.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 7 -->
+      <a href="./RP-361.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/TECTYL RP 361.jpg" alt="RP 361">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">Tectyl</h2>
+            <h2 class="product_name">RP 361</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu chống rỉ.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 8 -->
+      <a href="./HYDRAULIC-32.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/TECTYL HYDRAULIC 32.jpg" alt="HYDRAULIC 32">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">Tectyl</h2>
+            <h2 class="product_name">HYDRAULIC 32</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu thủy lực công nghiệp.</p>
+          </div>
+        </div>
+      </a>
+      <!-- Sản phẩm 9 -->
+      <a href="./WL-68A.html" class="product_link">
+        <div class="product_detail">
+          <div class="product_display">
+            <img src="./css/Oil img/tectyl wl68a.jpg" alt="WL 68A">
+          </div>
+          <div class="product_info">
+            <h2 class="product_type">Tectyl</h2>
+            <h2 class="product_name">WL 68A</h2>
+            <p class="product_benefit"><strong>Công dụng:</strong> Dầu rãnh trượt cao cấp.</p>
+          </div>
+        </div>
+      </a>
     </section>
   </main>
   <footer>
@@ -232,8 +359,8 @@
       once: true
     });
   </script>
-  <script src="./script.js"></script>
-  <script src="./index.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 

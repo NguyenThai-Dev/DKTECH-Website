@@ -1,0 +1,177 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 50px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.1rem;
+
+    .product_detail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 8px;
+    }
+
+    .product_display {
+        flex: 1;
+        text-align: center;
+
+        img {
+            width: 25rem;
+            height: 25rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .product_display:hover img {
+        transform: scale(1.05);
+    }
+
+    .product_info {
+        flex: 2;
+        min-width: 10rem;
+    }
+
+    .product_type,
+    .product_name {
+        margin: 0;
+    }
+
+    .product_benefit,
+    .product_volume {
+        font-size: 1.1rem;
+        text-align: justify;
+
+        strong {
+            font-size: 1.3rem;
+        }
+    }
+
+    .volume_options {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #buy_product {
+        padding: 10px 15px;
+        margin-top: 10px;
+        background: rgb(3, 52, 181);
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+
+        a {
+            text-decoration: none;
+
+
+            i {
+                transition: all 0.5s ease-out;
+                color: #ecf0f1;
+            }
+
+            span {
+                display: none;
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        &:hover a i {
+            display: none;
+        }
+
+        &:hover a span {
+            display: block;
+            color: #ecf0f1;
+        }
+    }
+
+    .table-of-contents,
+    .product-applications,
+    .product-benefits,
+    .usage-guidelines,
+    .technical-specs {
+        padding-left: 15px;
+
+        h2,
+        p {
+            margin-left: -15px;
+        }
+    }
+
+    .product-overview {
+        text-align: justify;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0 0 -15px;
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #3498db;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+    }
+
+    section {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        blockquote {
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .product-image-container {
+        .arrow {
+            padding: 8px;
+            font-size: 1em;
+            left: 10px;
+            right: 10px;
+        }
+    }
+
+    .product-options {
+        flex-direction: column;
+        gap: 10px;
+
+        .option {
+            width: 100%;
+        }
+    }
+
+    .contact-btn {
+        font-size: 1em;
+    }
+}
