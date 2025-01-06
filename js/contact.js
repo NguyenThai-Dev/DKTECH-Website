@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				try {
 					const formData = new FormData(form);
 					const data = Object.fromEntries(formData.entries());
-					const response = await fetch('http://localhost:3000/send-email', {
+					const response = await fetch('https://dktech-website.onrender.com/send-email', {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json',
