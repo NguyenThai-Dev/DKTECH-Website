@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/SHL-KOREA-PRODUCTS.css" />
+		<link rel="icon" href="./css/img/DKTECH-Favicon.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<title>SHL KOREA</title>
+		<script src="./js/script.js" async></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<nav id="navbar"></nav>
+		<nav id="c-circle-nav" class="c-circle-nav"></nav>
+		<main>
+			<header>
+				<div>
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+						<path
+							d="M 24.001953 4.0039062 C 23.233953 4.0039062 22.466359 4.2963125 21.880859 4.8828125 L 0.88085938 25.882812 C -0.29114062 27.055812 -0.29114062 28.950047 0.88085938 30.123047 C 2.0058594 31.256047 3.809375 31.295859 4.984375 30.255859 L 6.1347656 29.109375 C 6.3307656 28.922375 6.6457969 28.922375 6.8417969 29.109375 C 7.0367969 29.309375 7.0367969 29.629406 6.8417969 29.816406 L 5.828125 30.828125 C 5.574125 31.081125 5.2969531 31.29575 5.0019531 31.46875 L 5.0019531 47.003906 L 4.9980469 47.001953 C 3.8970469 47.001953 0.99804688 47.229766 0.99804688 47.509766 C 0.99804687 47.775766 3.8970469 48.001953 4.9980469 48.001953 L 5.0019531 48 L 5.0019531 48.001953 L 42.998047 48.001953 L 42.998047 48 L 43.003906 48.001953 C 44.104906 48.001953 47.003906 47.775766 47.003906 47.509766 C 47.003906 47.229766 44.104906 47.001953 43.003906 47.001953 L 42.998047 47.005859 L 42.996094 31.46875 C 42.703094 31.29575 42.426781 31.081125 42.175781 30.828125 L 41.162109 29.814453 C 40.967109 29.627453 40.967109 29.307422 41.162109 29.107422 C 41.358109 28.920422 41.673141 28.920422 41.869141 29.107422 L 43.019531 30.255859 C 44.195531 31.295859 45.996047 31.254094 47.123047 30.121094 C 48.295047 28.948094 48.295047 27.055813 47.123047 25.882812 L 39.003906 17.761719 L 39.003906 10.001953 L 40.005859 9.0019531 L 40.005859 8.0019531 L 33.003906 8.0019531 L 33.003906 9.0019531 L 34.003906 10.001953 L 34.003906 11.349609 L 35.841797 13.189453 C 36.036797 13.376453 36.036797 13.696484 35.841797 13.896484 C 35.645797 14.083484 35.330766 14.083484 35.134766 13.896484 L 26.123047 4.8828125 C 25.537547 4.2963125 24.769953 4.0039062 24.001953 4.0039062 z M 24 6.0058594 C 24.256 6.0058594 24.512531 6.103375 24.707031 6.296875 L 45.707031 27.296875 C 46.098031 27.682875 46.098031 28.321984 45.707031 28.708984 C 45.318031 29.095984 44.683922 29.095984 44.294922 28.708984 L 24.708984 9.1210938 C 24.317984 8.7340937 23.685922 8.7340937 23.294922 9.1210938 L 3.7070312 28.708984 C 3.3180313 29.094984 2.6839219 29.094984 2.2949219 28.708984 C 1.9039219 28.322984 1.9039219 27.683875 2.2949219 27.296875 L 23.294922 6.296875 C 23.489422 6.103375 23.744 6.0058594 24 6.0058594 z M 24.003906 21.001953 C 27.110906 21.001953 29.915469 22.214766 31.855469 24.134766 C 32.051469 24.334766 32.052422 24.641797 31.857422 24.841797 C 31.662422 25.041797 31.346391 25.041797 31.150391 24.841797 C 29.402391 23.108797 26.852906 22.001953 24.003906 22.001953 C 21.151906 22.001953 18.600562 23.108797 16.851562 24.841797 C 16.655562 25.041797 16.339531 25.041797 16.144531 24.841797 C 15.949531 24.641797 15.952438 24.334766 16.148438 24.134766 C 18.090438 22.214766 20.894906 21.001953 24.003906 21.001953 z M 18.994141 26.001953 L 29.001953 26.001953 L 29.001953 44.001953 L 18.994141 44.001953 L 18.994141 26.001953 z M 20.498047 31.001953 C 20.222047 31.001953 19.998047 31.229766 19.998047 31.509766 L 19.998047 38.482422 C 19.998047 38.749422 20.222047 38.974609 20.498047 38.974609 C 20.773047 38.974609 20.998047 38.749422 20.998047 38.482422 L 20.998047 31.509766 C 20.998047 31.229766 20.773047 31.001953 20.498047 31.001953 z M 17.001953 45.001953 L 31.001953 45.001953 C 31.551953 45.001953 32.001953 45.454953 32.001953 46.001953 L 32.001953 47.001953 L 16.001953 47.001953 L 16.001953 46.001953 C 16.001953 45.454953 16.449953 45.001953 17.001953 45.001953 z"></path>
+					</svg>
+					<a href="index.html">Trang chủ/</a>
+					<a href="#">Dầu nhớt chính hãng/</a>
+					<a href="#" id="page_location">SHL KOREA</a>
+				</div>
+			</header>
+			<div id="toggle_page_aside" onclick="toggleAside('product_page_aside');">
+				<i class="fa-solid fa-bars"></i>
+				Danh sách sản phẩm
+			</div>
+			<aside id="product_page_aside">
+				<h1 class="product_page_aside_list">DẦU GIA CÔNG KIM LOẠI</h1>
+				<ol class="product_page_aside_list_item">
+					<li class="product_page_aside_item">
+						<button class="category-toggle active-button" data-target="category-1">Dầu cắt gọt pha nước</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-2">Dầu cắt gọt không pha nước</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-3">Dầu chống gỉ</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-4">Dầu xử lý nhiệt</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-5">Dầu tẩy rửa</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-6">Dầu tách khuôn</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-7">Dầu định hình</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-8">Dầu cán</button>
+					</li>
+				</ol>
+				<h1 class="product_page_aside_list">DẦU NHỚT CÔNG NGHIỆP</h1>
+				<ol class="product_page_aside_list_item">
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-9">Dầu thủy lực</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-10">Dầu truyền nhiệt</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-11">Dầu bánh răng</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-12">Dầu máy</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-13">Dầu rãnh trượt</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-14">Dầu trục quay</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-15">Dầu máy nén khí</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-16">Dầu tuabin</button>
+					</li>
+				</ol>
+				<h1 class="product_page_aside_list">DẦU ĐỘNG CƠ</h1>
+				<ol class="product_page_aside_list_item">
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-17">Dầu hộp số</button>
+					</li>
+					<li class="product_page_aside_item">
+						<button class="category-toggle" data-target="category-18">Dầu động cơ</button>
+					</li>
+				</ol>
+			</aside>
+			<section id="category-1" class="product_page_section category" data-loaded="false">
+				<h1>Dầu cắt gọt pha nước</h1>
+			</section>
+			<section id="category-2" class="product_page_section category" data-loaded="false">
+				<h1>Dầu cắt gọt không pha nước</h1>
+			</section>
+			<section id="category-3" class="product_page_section category" data-loaded="false">
+				<h1>Dầu chống gỉ</h1>
+			</section>
+			<section id="category-4" class="product_page_section category" data-loaded="false">
+				<h1>Dầu xử lý nhiệt</h1>
+			</section>
+			<section id="category-5" class="product_page_section category" data-loaded="false">
+				<h1>Dầu tẩy rửa</h1>
+			</section>
+			<section id="category-6" class="product_page_section category" data-loaded="false">
+				<h1>Dầu tách khuôn</h1>
+			</section>
+			<section id="category-7" class="product_page_section category" data-loaded="false">
+				<h1>Dầu định hình</h1>
+			</section>
+			<section id="category-8" class="product_page_section category" data-loaded="false">
+				<h1>Dầu cán</h1>
+			</section>
+			<section id="category-9" class="product_page_section category" data-loaded="false">
+				<h1>Dầu thủy lực</h1>
+			</section>
+			<section id="category-10" class="product_page_section category" data-loaded="false">
+				<h1>Dầu truyền nhiệt</h1>
+			</section>
+			<section id="category-11" class="product_page_section category" data-loaded="false">
+				<h1>Dầu bánh răng</h1>
+			</section>
+			<section id="category-12" class="product_page_section category" data-loaded="false">
+				<h1>Dầu máy</h1>
+			</section>
+			<section id="category-13" class="product_page_section category" data-loaded="false">
+				<h1>Dầu rãnh trượt</h1>
+			</section>
+			<section id="category-14" class="product_page_section category" data-loaded="false">
+				<h1>Dầu trục quay</h1>
+			</section>
+			<section id="category-15" class="product_page_section category" data-loaded="false">
+				<h1>Dầu máy nén khí</h1>
+			</section>
+			<section id="category-16" class="product_page_section category" data-loaded="false">
+				<h1>Dầu tuabin</h1>
+			</section>
+			<section id="category-17" class="product_page_section category" data-loaded="false">
+				<h1>Dầu hộp số</h1>
+			</section>
+			<section id="category-18" class="product_page_section category" data-loaded="false">
+				<h1>Dầu động cơ</h1>
+			</section>
+		</main>
+		<nav>
+			<button id="scrollToTopButton">
+				<i class="fa-solid fa-arrow-up"></i>
+			</button>
+		</nav>
+		<footer id="footer"></footer>
+		<script src="./js/SHL-KOREA-PRODUCTS.js"></script>
+	</body>
+</html>

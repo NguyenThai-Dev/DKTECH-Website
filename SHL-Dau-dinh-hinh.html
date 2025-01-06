@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/products.css" />
+		<link rel="icon" href="./css/img/DKTECH-Favicon.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=oil_barrel" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<title>THIẾT BỊ CÔNG NGHIỆP DKTECH VIỆT NAM</title>
+		<script src="./js/script.js" async></script>
+		<script src="./js/products.js" defer></script>
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<nav id="navbar"></nav>
+		<nav id="c-circle-nav" class="c-circle-nav"></nav>
+		<main>
+			<header>
+				<div>
+					<a href="./index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+							<path
+								d="M 24.001953 4.0039062 C 23.233953 4.0039062 22.466359 4.2963125 21.880859 4.8828125 L 0.88085938 25.882812 C -0.29114062 27.055812 -0.29114062 28.950047 0.88085938 30.123047 C 2.0058594 31.256047 3.809375 31.295859 4.984375 30.255859 L 6.1347656 29.109375 C 6.3307656 28.922375 6.6457969 28.922375 6.8417969 29.109375 C 7.0367969 29.309375 7.0367969 29.629406 6.8417969 29.816406 L 5.828125 30.828125 C 5.574125 31.081125 5.2969531 31.29575 5.0019531 31.46875 L 5.0019531 47.003906 L 4.9980469 47.001953 C 3.8970469 47.001953 0.99804688 47.229766 0.99804688 47.509766 C 0.99804687 47.775766 3.8970469 48.001953 4.9980469 48.001953 L 5.0019531 48 L 5.0019531 48.001953 L 42.998047 48.001953 L 42.998047 48 L 43.003906 48.001953 C 44.104906 48.001953 47.003906 47.775766 47.003906 47.509766 C 47.003906 47.229766 44.104906 47.001953 43.003906 47.001953 L 42.998047 47.005859 L 42.996094 31.46875 C 42.703094 31.29575 42.426781 31.081125 42.175781 30.828125 L 41.162109 29.814453 C 40.967109 29.627453 40.967109 29.307422 41.162109 29.107422 C 41.358109 28.920422 41.673141 28.920422 41.869141 29.107422 L 43.019531 30.255859 C 44.195531 31.295859 45.996047 31.254094 47.123047 30.121094 C 48.295047 28.948094 48.295047 27.055813 47.123047 25.882812 L 39.003906 17.761719 L 39.003906 10.001953 L 40.005859 9.0019531 L 40.005859 8.0019531 L 33.003906 8.0019531 L 33.003906 9.0019531 L 34.003906 10.001953 L 34.003906 11.349609 L 35.841797 13.189453 C 36.036797 13.376453 36.036797 13.696484 35.841797 13.896484 C 35.645797 14.083484 35.330766 14.083484 35.134766 13.896484 L 26.123047 4.8828125 C 25.537547 4.2963125 24.769953 4.0039062 24.001953 4.0039062 z M 24 6.0058594 C 24.256 6.0058594 24.512531 6.103375 24.707031 6.296875 L 45.707031 27.296875 C 46.098031 27.682875 46.098031 28.321984 45.707031 28.708984 C 45.318031 29.095984 44.683922 29.095984 44.294922 28.708984 L 24.708984 9.1210938 C 24.317984 8.7340937 23.685922 8.7340937 23.294922 9.1210938 L 3.7070312 28.708984 C 3.3180313 29.094984 2.6839219 29.094984 2.2949219 28.708984 C 1.9039219 28.322984 1.9039219 27.683875 2.2949219 27.296875 L 23.294922 6.296875 C 23.489422 6.103375 23.744 6.0058594 24 6.0058594 z M 24.003906 21.001953 C 27.110906 21.001953 29.915469 22.214766 31.855469 24.134766 C 32.051469 24.334766 32.052422 24.641797 31.857422 24.841797 C 31.662422 25.041797 31.346391 25.041797 31.150391 24.841797 C 29.402391 23.108797 26.852906 22.001953 24.003906 22.001953 C 21.151906 22.001953 18.600562 23.108797 16.851562 24.841797 C 16.655562 25.041797 16.339531 25.041797 16.144531 24.841797 C 15.949531 24.641797 15.952438 24.334766 16.148438 24.134766 C 18.090438 22.214766 20.894906 21.001953 24.003906 21.001953 z M 18.994141 26.001953 L 29.001953 26.001953 L 29.001953 44.001953 L 18.994141 44.001953 L 18.994141 26.001953 z M 20.498047 31.001953 C 20.222047 31.001953 19.998047 31.229766 19.998047 31.509766 L 19.998047 38.482422 C 19.998047 38.749422 20.222047 38.974609 20.498047 38.974609 C 20.773047 38.974609 20.998047 38.749422 20.998047 38.482422 L 20.998047 31.509766 C 20.998047 31.229766 20.773047 31.001953 20.498047 31.001953 z M 17.001953 45.001953 L 31.001953 45.001953 C 31.551953 45.001953 32.001953 45.454953 32.001953 46.001953 L 32.001953 47.001953 L 16.001953 47.001953 L 16.001953 46.001953 C 16.001953 45.454953 16.449953 45.001953 17.001953 45.001953 z"></path>
+						</svg>
+						Trang chủ/
+					</a>
+					<a href="./Dau-nhot-chinh-hang.html">Dầu nhớt chính hãng/</a>
+					<a href="SHL-KOREA-PRODUCTS.html">SHL KOREA/</a>
+					<a href="Dau-cat-got-pha-nuoc.html" id="page_location">Dầu định hình</a>
+				</div>
+			</header>
+			<aside id="header_product_slide_info">
+				<div class="slider">
+					<div class="slides">
+						<img src="./css/Oil img/SHL SPINDLE V10.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SAMLEX HP 5025V.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SAMLEX WAXY 70A.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SPINDLE V5.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SYNTHDRO 32AW.jpg" alt="" class="slide_img" />
+					</div>
+					<div class="navigation">
+						<button id="prev">&#10094;</button>
+						<button id="next">&#10095;</button>
+					</div>
+					<div class="dots"></div>
+				</div>
+				<div class="info">
+					<h1 class="product_type">SHL</h1>
+					<h1 class="product_name">Dầu định hình</h1>
+					<p class="product_overview">
+						Dầu định hình
+						<span>SHL Forming Oil</span>
+						là giải pháp chuyên dụng trong các quy trình gia công kim loại như dập, uốn, kéo sâu và tạo hình. Sản phẩm
+						được pha chế từ dầu gốc chất lượng cao cùng các phụ gia bôi trơn tiên tiến, mang lại khả năng giảm ma sát
+						hiệu quả, hạn chế nhiệt độ phát sinh và đảm bảo độ chính xác cao cho sản phẩm hoàn thiện. Đồng thời, dầu SHL
+						định hình bảo vệ bề mặt vật liệu khỏi trầy xước, chống ăn mòn và kéo dài tuổi thọ của khuôn. Với đặc tính ổn
+						định, khả năng chịu tải cao và đáp ứng tiêu chuẩn chất lượng khắt khe, dầu định hình SHL giúp tối ưu hiệu
+						suất sản xuất, giảm chi phí bảo trì thiết bị và nâng cao chất lượng sản phẩm cuối cùng.
+					</p>
+					<div id="buy_product">
+						<div id="dub-arrow">
+							<a href="Contact.html">Đặt hàng ngay!</a>
+						</div>
+						<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+					</div>
+				</div>
+			</aside>
+			<aside id="change_oil_type">
+				<button id="keo_ap_luc" class="oil_type">Dầu kéo áp lực</button>
+				<button id="heading" class="oil_type">Dầu HEDAIND</button>
+				<button id="dap" class="oil_type">Dầu dập bay hơi nhanh</button>
+				<button id="keo_day" class="oil_type">Dầu kéo dây</button>
+				<button id="ong" class="oil_type">Dầu kéo ống</button>
+			</aside>
+			<section id="keo_ap_luc_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Chlorine</th>
+							<th>Sulfur</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Ứng dụng</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL DRAW 30 HA</td>
+							<td>Đen</td>
+							<td>1.00</td>
+							<td>30</td>
+							<td>>100</td>
+							<td>O</td>
+							<td>O</td>
+							<td>1</td>
+							<td>Định hình sâu, nén và dập</td>
+						</tr>
+						<tr>
+							<td>SHL DRAW 150HA</td>
+							<td>Đen</td>
+							<td>1.11</td>
+							<td>168</td>
+							<td>>150</td>
+							<td>O</td>
+							<td>O</td>
+							<td>1</td>
+							<td>Kéo dập sâu và blanking</td>
+						</tr>
+						<tr>
+							<td>SHL DRAW V150HA-2</td>
+							<td>Nâu đen trong suốt</td>
+							<td>1.08</td>
+							<td>166</td>
+							<td>>160</td>
+							<td>O</td>
+							<td>O</td>
+							<td>1</td>
+							<td>Kéo dập sâu và blanking</td>
+						</tr>
+						<tr>
+							<td>SHL DRAW 2047L-3</td>
+							<td>Nâu vàng trong suốt</td>
+							<td>1.00</td>
+							<td>129</td>
+							<td>>240</td>
+							<td>O</td>
+							<td>O</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PRESS 6L</td>
+							<td>Vàng nhạt trong suốt</td>
+							<td>0.83</td>
+							<td>6</td>
+							<td>>150</td>
+							<td>X</td>
+							<td>O</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PRESS 12L</td>
+							<td>Vàng nhạt trong suốt</td>
+							<td>0.87</td>
+							<td>12</td>
+							<td>>150</td>
+							<td>X</td>
+							<td>O</td>
+							<td>1</td>
+							<td>Dập và uốn</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="heading_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (40°C)</th>
+							<th>Chlorine</th>
+							<th>Sulfur</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Ứng dụng</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL THREAD 1</td>
+							<td>Vàng nhạt trong suốt</td>
+							<td>0.85</td>
+							<td>29</td>
+							<td>>220</td>
+							<td>X</td>
+							<td>O</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL HEADING PRO 6H-1</td>
+							<td>Nâu trong suốt</td>
+							<td>0.92</td>
+							<td>57</td>
+							<td>>220</td>
+							<td>O</td>
+							<td>O</td>
+							<td>1</td>
+							<td>Rèn nguội cho thép, SUS</td>
+						</tr>
+						<tr>
+							<td>SHL HEADING 100P</td>
+							<td>Vàng trong suốt</td>
+							<td>0.89</td>
+							<td>100</td>
+							<td>>200</td>
+							<td>X</td>
+							<td>O</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL HEADING 150P</td>
+							<td>Vàng trong suốt</td>
+							<td>0.89</td>
+							<td>110</td>
+							<td>>200</td>
+							<td>X</td>
+							<td>O</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL HEADING 170P</td>
+							<td>Vàng trong suốt</td>
+							<td>0.89</td>
+							<td>136</td>
+							<td>>200</td>
+							<td>X</td>
+							<td>O</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL HEADING L325</td>
+							<td>Nâu trong suốt</td>
+							<td>0.91</td>
+							<td>116</td>
+							<td>>220</td>
+							<td>O</td>
+							<td>O</td>
+							<td>1</td>
+							<td>Rèn nguội cho thép, SUS</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="dap_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (40°C)</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Hợp kim thép</th>
+							<th>Nhôm</th>
+							<th>Đồng/Hợp kim kẽm</th>
+							<th>SUS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL PUNCH 200H</td>
+							<td>Trong suốt</td>
+							<td>0.79</td>
+							<td>1.1</td>
+							<td>42</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH 540</td>
+							<td>Trong suốt</td>
+							<td>0.81</td>
+							<td>2.3</td>
+							<td>108</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH 6000</td>
+							<td>Vàng nhạt trong suốt</td>
+							<td>0.77</td>
+							<td>1.6</td>
+							<td>59</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH F1</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.5</td>
+							<td>60</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH G010</td>
+							<td>Trong suốt</td>
+							<td>0.76</td>
+							<td>1.3</td>
+							<td>38</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH G020</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.5</td>
+							<td>45</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH H</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.5</td>
+							<td>62</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH H-1</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.3</td>
+							<td>58</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH H-2</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.5</td>
+							<td>55</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH H-3</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.6</td>
+							<td>55</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH HN</td>
+							<td>Trong suốt</td>
+							<td>0.79</td>
+							<td>1.3</td>
+							<td>54</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH K9HS</td>
+							<td>Trong suốt</td>
+							<td>0.79</td>
+							<td>1.7</td>
+							<td>60</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH M1</td>
+							<td>Vàng nhạt trong suốt</td>
+							<td>0.79</td>
+							<td>1.9</td>
+							<td>79</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>Có điều kiện</td>
+							<td></td>
+							<td>✓</td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH M2</td>
+							<td>Vàng nhạt trong suốt</td>
+							<td>0.79</td>
+							<td>2.1</td>
+							<td>79</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>Có điều kiện</td>
+							<td></td>
+							<td>✓</td>
+						</tr>
+						<tr>
+							<td>SHL PUNCH Q4T</td>
+							<td>Trong suốt</td>
+							<td>0.77</td>
+							<td>1.6</td>
+							<td>62</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>Có điều kiện</td>
+							<td></td>
+							<td>✓</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="keo_day_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (40°C)</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Hợp kim thép</th>
+							<th>Nhôm</th>
+							<th>Đồng/Hợp kim kẽm</th>
+							<th>SUS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL WIRE DRAW 240</td>
+							<td>Vàng trong suốt</td>
+							<td>0.87</td>
+							<td>24</td>
+							<td>>200</td>
+							<td>1</td>
+							<td>✓</td>
+							<td></td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="ong_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (40°C)</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Hợp kim thép</th>
+							<th>Nhôm</th>
+							<th>Đồng/Hợp kim kẽm</th>
+							<th>SUS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL DRAW 460 S</td>
+							<td>Vàng trong suốt</td>
+							<td>0.91</td>
+							<td>460</td>
+							<td>>200</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL DRAW 800AL</td>
+							<td>Nâu</td>
+							<td>0.9</td>
+							<td>800</td>
+							<td>>200</td>
+							<td>1</td>
+							<td></td>
+							<td>✓</td>
+							<td>✓</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SHL DRAW 7000S</td>
+							<td>Nâu</td>
+							<td>1.03</td>
+							<td>6600</td>
+							<td>>200</td>
+							<td>1</td>
+							<td>✓</td>
+							<td></td>
+							<td></td>
+							<td>✓</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="product_info">
+				<section class="product-info">
+					<h3>Đặc Điểm Nổi Bật Của Dầu Định Hình</h3>
+					<p>
+						Dầu định hình SHL được thiết kế đặc biệt để hỗ trợ các quá trình gia công kim loại như ép, đục lỗ, định hình
+						và dập. Với công thức từ dầu gốc chất lượng cao kết hợp với phụ gia tiên tiến, sản phẩm mang lại khả năng
+						bôi trơn vượt trội, giảm ma sát và nhiệt độ, từ đó bảo vệ bề mặt kim loại và dụng cụ gia công, đồng thời
+						tăng hiệu suất sản xuất.
+					</p>
+					<ul>
+						<li>
+							<strong>Khả năng bôi trơn ưu việt:</strong>
+							Giảm ma sát giữa công cụ và vật liệu, giúp các thao tác gia công trở nên mượt mà và hiệu quả hơn.
+						</li>
+						<li>
+							<strong>Chống mài mòn và bảo vệ bề mặt:</strong>
+							Dầu định hình giúp ngăn ngừa sự trầy xước hoặc biến dạng bề mặt kim loại trong quá trình ép hoặc dập.
+						</li>
+						<li>
+							<strong>Tính ổn định cao:</strong>
+							Hoạt động hiệu quả ngay cả trong điều kiện áp suất và nhiệt độ cao, đảm bảo hiệu suất ổn định trong suốt
+							quá trình gia công.
+						</li>
+						<li>
+							<strong>Thân thiện với thiết bị:</strong>
+							Kéo dài tuổi thọ của khuôn và các dụng cụ ép, dập, giảm thiểu chi phí bảo trì và thay thế.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-uses">
+					<h3>Công Dụng Của Dầu Định Hình</h3>
+					<p>
+						Dầu định hình SHL là giải pháp tối ưu để nâng cao chất lượng và hiệu suất trong các quy trình ép, dập và
+						định hình kim loại. Sản phẩm được thiết kế nhằm đảm bảo độ chính xác cao và bảo vệ tối đa bề mặt kim loại
+						cũng như dụng cụ gia công.
+					</p>
+					<ul>
+						<li>
+							<strong>Hỗ trợ quá trình ép và dập:</strong>
+							Giảm ma sát và nhiệt độ phát sinh trong quá trình ép, dập, bảo vệ bề mặt kim loại và khuôn.
+						</li>
+						<li>
+							<strong>Bảo vệ khuôn và công cụ:</strong>
+							Ngăn ngừa sự mài mòn, hao mòn hoặc biến dạng khuôn trong các quy trình gia công áp lực cao.
+						</li>
+						<li>
+							<strong>Đảm bảo chất lượng sản phẩm:</strong>
+							Dầu định hình giúp sản phẩm hoàn thiện đạt độ chính xác cao, bề mặt mịn màng, không bị biến dạng.
+						</li>
+						<li>
+							<strong>Tăng năng suất:</strong>
+							Giảm thời gian chết do bảo trì thiết bị, tối ưu hóa thời gian và hiệu quả sản xuất.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-applications">
+					<h3>Ứng Dụng Thực Tiễn</h3>
+					<p>
+						Dầu định hình SHL được sử dụng rộng rãi trong các ngành công nghiệp chế tạo và gia công kim loại, đặc biệt
+						trong các quy trình ép, dập và định hình. Các ứng dụng cụ thể bao gồm:
+					</p>
+					<ul>
+						<li>
+							<strong>Ép và đục lỗ:</strong>
+							Hỗ trợ các thao tác ép và đục lỗ trên kim loại, đảm bảo bề mặt vật liệu không bị hư hại và sản phẩm đạt
+							chất lượng cao.
+						</li>
+						<li>
+							<strong>Định hình và tạo dáng:</strong>
+							Phù hợp cho các công đoạn định hình kim loại, giúp duy trì độ chính xác và đồng nhất của sản phẩm.
+						</li>
+						<li>
+							<strong>Dập kim loại:</strong>
+							Tăng hiệu quả và độ bền trong quá trình dập các tấm kim loại, bảo vệ khuôn và vật liệu khỏi bị biến dạng
+							hoặc hư hỏng.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-storage">
+					<h3>Hướng Dẫn Bảo Quản</h3>
+					<p>Để đảm bảo hiệu quả tối ưu của dầu định hình SHL, cần tuân thủ các hướng dẫn bảo quản sau:</p>
+					<ul>
+						<li>
+							<strong>Lưu trữ nơi khô ráo, thoáng mát:</strong>
+							Tránh ánh nắng trực tiếp và nhiệt độ cao để duy trì chất lượng dầu.
+						</li>
+						<li>
+							<strong>Đậy kín sau khi sử dụng:</strong>
+							Đảm bảo không để dầu tiếp xúc với nước, bụi hoặc các tạp chất khác.
+						</li>
+						<li>
+							<strong>Kiểm tra định kỳ:</strong>
+							Đánh giá chất lượng dầu thường xuyên để phát hiện các dấu hiệu nhiễm bẩn hoặc biến chất.
+						</li>
+						<li>
+							<strong>Tuân thủ hướng dẫn sử dụng:</strong>
+							Sử dụng theo khuyến cáo của nhà sản xuất để đạt hiệu quả tối đa.
+						</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+		<script>
+			document.querySelectorAll('.oil_type').forEach((button) => {
+				button.addEventListener('click', function () {
+					document.querySelectorAll('.oil_type').forEach((btn) => btn.classList.remove('active'));
+					this.classList.add('active');
+				});
+			});
+			window.onload = function () {
+				const tab = getQueryParam('tab');
+				if (tab) {
+					showTable(tab);
+					document.getElementById(tab).classList.add('active');
+				} else {
+					showTable('keo_ap_luc');
+					document.getElementById('keo_ap_luc').classList.add('active');
+				}
+			};
+			function getQueryParam(param) {
+				const urlParams = new URLSearchParams(window.location.search);
+				return urlParams.get(param);
+			}
+			const tables = {
+				keo_ap_luc: document.getElementById('keo_ap_luc_table'),
+				heading: document.getElementById('heading_table'),
+				dap: document.getElementById('dap_table'),
+				keo_day: document.getElementById('keo_day_table'),
+				ong: document.getElementById('ong_table'),
+			};
+			function showTable(tableId) {
+				for (let key in tables) {
+					tables[key].style.display = 'none';
+				}
+				tables[tableId].style.display = 'block';
+				tables[tableId].style.animation = 'faded_left 0.5s ease-in-out';
+			}
+			document.getElementById('keo_ap_luc').addEventListener('click', function () {
+				showTable('keo_ap_luc');
+			});
+			document.getElementById('heading').addEventListener('click', function () {
+				showTable('heading');
+			});
+			document.getElementById('dap').addEventListener('click', function () {
+				showTable('dap');
+			});
+			document.getElementById('keo_day').addEventListener('click', function () {
+				showTable('keo_day');
+			});
+			document.getElementById('ong').addEventListener('click', function () {
+				showTable('ong');
+			});
+		</script>
+	</body>
+</html>

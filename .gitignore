@@ -1,3 +1,4 @@
 # Bỏ qua file .env
 .env
 node_modules/
+.vscode

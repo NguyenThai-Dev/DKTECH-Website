@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/products.css" />
+		<link rel="icon" href="./css/img/DKTECH-Favicon.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=oil_barrel" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<title>THIẾT BỊ CÔNG NGHIỆP DKTECH VIỆT NAM</title>
+		<script src="./js/script.js" async></script>
+		<script src="./js/products.js" defer></script>
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<nav id="navbar"></nav>
+		<nav id="c-circle-nav" class="c-circle-nav"></nav>
+		<main>
+			<header>
+				<div>
+					<a href="./index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+							<path
+								d="M 24.001953 4.0039062 C 23.233953 4.0039062 22.466359 4.2963125 21.880859 4.8828125 L 0.88085938 25.882812 C -0.29114062 27.055812 -0.29114062 28.950047 0.88085938 30.123047 C 2.0058594 31.256047 3.809375 31.295859 4.984375 30.255859 L 6.1347656 29.109375 C 6.3307656 28.922375 6.6457969 28.922375 6.8417969 29.109375 C 7.0367969 29.309375 7.0367969 29.629406 6.8417969 29.816406 L 5.828125 30.828125 C 5.574125 31.081125 5.2969531 31.29575 5.0019531 31.46875 L 5.0019531 47.003906 L 4.9980469 47.001953 C 3.8970469 47.001953 0.99804688 47.229766 0.99804688 47.509766 C 0.99804687 47.775766 3.8970469 48.001953 4.9980469 48.001953 L 5.0019531 48 L 5.0019531 48.001953 L 42.998047 48.001953 L 42.998047 48 L 43.003906 48.001953 C 44.104906 48.001953 47.003906 47.775766 47.003906 47.509766 C 47.003906 47.229766 44.104906 47.001953 43.003906 47.001953 L 42.998047 47.005859 L 42.996094 31.46875 C 42.703094 31.29575 42.426781 31.081125 42.175781 30.828125 L 41.162109 29.814453 C 40.967109 29.627453 40.967109 29.307422 41.162109 29.107422 C 41.358109 28.920422 41.673141 28.920422 41.869141 29.107422 L 43.019531 30.255859 C 44.195531 31.295859 45.996047 31.254094 47.123047 30.121094 C 48.295047 28.948094 48.295047 27.055813 47.123047 25.882812 L 39.003906 17.761719 L 39.003906 10.001953 L 40.005859 9.0019531 L 40.005859 8.0019531 L 33.003906 8.0019531 L 33.003906 9.0019531 L 34.003906 10.001953 L 34.003906 11.349609 L 35.841797 13.189453 C 36.036797 13.376453 36.036797 13.696484 35.841797 13.896484 C 35.645797 14.083484 35.330766 14.083484 35.134766 13.896484 L 26.123047 4.8828125 C 25.537547 4.2963125 24.769953 4.0039062 24.001953 4.0039062 z M 24 6.0058594 C 24.256 6.0058594 24.512531 6.103375 24.707031 6.296875 L 45.707031 27.296875 C 46.098031 27.682875 46.098031 28.321984 45.707031 28.708984 C 45.318031 29.095984 44.683922 29.095984 44.294922 28.708984 L 24.708984 9.1210938 C 24.317984 8.7340937 23.685922 8.7340937 23.294922 9.1210938 L 3.7070312 28.708984 C 3.3180313 29.094984 2.6839219 29.094984 2.2949219 28.708984 C 1.9039219 28.322984 1.9039219 27.683875 2.2949219 27.296875 L 23.294922 6.296875 C 23.489422 6.103375 23.744 6.0058594 24 6.0058594 z M 24.003906 21.001953 C 27.110906 21.001953 29.915469 22.214766 31.855469 24.134766 C 32.051469 24.334766 32.052422 24.641797 31.857422 24.841797 C 31.662422 25.041797 31.346391 25.041797 31.150391 24.841797 C 29.402391 23.108797 26.852906 22.001953 24.003906 22.001953 C 21.151906 22.001953 18.600562 23.108797 16.851562 24.841797 C 16.655562 25.041797 16.339531 25.041797 16.144531 24.841797 C 15.949531 24.641797 15.952438 24.334766 16.148438 24.134766 C 18.090438 22.214766 20.894906 21.001953 24.003906 21.001953 z M 18.994141 26.001953 L 29.001953 26.001953 L 29.001953 44.001953 L 18.994141 44.001953 L 18.994141 26.001953 z M 20.498047 31.001953 C 20.222047 31.001953 19.998047 31.229766 19.998047 31.509766 L 19.998047 38.482422 C 19.998047 38.749422 20.222047 38.974609 20.498047 38.974609 C 20.773047 38.974609 20.998047 38.749422 20.998047 38.482422 L 20.998047 31.509766 C 20.998047 31.229766 20.773047 31.001953 20.498047 31.001953 z M 17.001953 45.001953 L 31.001953 45.001953 C 31.551953 45.001953 32.001953 45.454953 32.001953 46.001953 L 32.001953 47.001953 L 16.001953 47.001953 L 16.001953 46.001953 C 16.001953 45.454953 16.449953 45.001953 17.001953 45.001953 z"></path>
+						</svg>
+						Trang chủ/
+					</a>
+					<a href="./Dau-nhot-chinh-hang.html">Dầu nhớt chính hãng/</a>
+					<a href="SHL-KOREA-PRODUCTS.html">SHL KOREA/</a>
+					<a href="Dau-cat-got-pha-nuoc.html" id="page_location">Dầu truyền nhiệt</a>
+				</div>
+			</header>
+			<aside id="header_product_slide_info">
+				<div class="slider">
+					<div class="slides">
+						<img src="./css/Oil img/SHL SPINDLE V10.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SAMLEX HP 5025V.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SAMLEX WAXY 70A.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SPINDLE V5.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SYNTHDRO 32AW.jpg" alt="" class="slide_img" />
+					</div>
+					<div class="navigation">
+						<button id="prev">&#10094;</button>
+						<button id="next">&#10095;</button>
+					</div>
+					<div class="dots"></div>
+				</div>
+				<div class="info">
+					<h1 class="product_type">SHL</h1>
+					<h1 class="product_name">Dầu truyền nhiệt</h1>
+					<p class="product_overview">
+						Dầu truyền nhiệt
+						<span>SHL Heat Transfer Oil</span>
+						là sản phẩm chuyên dụng, được sản xuất từ dầu gốc chất lượng cao kết hợp với phụ gia ổn định nhiệt và chống
+						oxy hóa vượt trội. Dầu mang lại khả năng dẫn nhiệt tối ưu, đảm bảo kiểm soát nhiệt độ chính xác trong các hệ
+						thống trao đổi nhiệt công nghiệp. Sản phẩm được thiết kế để hoạt động bền bỉ trong môi trường nhiệt độ cao,
+						không tạo cặn, và có tuổi thọ dài. Với tính năng ổn định hóa học và khả năng chịu nhiệt tốt, dầu truyền
+						nhiệt SHL phù hợp với các ứng dụng trong ngành công nghiệp hóa chất, chế biến thực phẩm, và các quy trình
+						gia nhiệt đòi hỏi độ tin cậy cao.
+					</p>
+					<div id="buy_product">
+						<div id="dub-arrow">
+							<a href="Contact.html">Đặt hàng ngay!</a>
+						</div>
+						<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+					</div>
+				</div>
+			</aside>
+			<aside id="change_oil_type">
+				<button id="khoang" class="oil_type">Dầu gốc khoáng</button>
+				<button id="tong_hop" class="oil_type">Loại tổng hợp</button>
+				<button id="ban_tong" class="oil_type">Loại bán tổng hợp</button>
+			</aside>
+			<section id="khoang_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Chỉ số độ nhớt</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Tự bốc cháy</th>
+							<th>Điểm đông đặc (°C)</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Chống oxi hóa</th>
+							<th>Bốc hơi thấp</th>
+							<th>Hiệu quả cao</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL THERM 22</td>
+							<td>0.84</td>
+							<td>22</td>
+							<td>120</td>
+							<td>>220</td>
+							<td>-</td>
+							<td>< -20</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>SHL THERM 32</td>
+							<td>0.84</td>
+							<td>32</td>
+							<td>130</td>
+							<td>>230</td>
+							<td>-</td>
+							<td>< -15</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>SHL THERM 46</td>
+							<td>0.85</td>
+							<td>46</td>
+							<td>125</td>
+							<td>>230</td>
+							<td>-</td>
+							<td>< -15</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>SHL THERM 68</td>
+							<td>0.86</td>
+							<td>68</td>
+							<td>125</td>
+							<td>>250</td>
+							<td>-</td>
+							<td>< -20</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="tong_hop_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Chỉ số độ nhớt</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Tự bốc cháy</th>
+							<th>Điểm đông đặc (°C)</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Chống oxi hóa</th>
+							<th>Bốc hơi thấp</th>
+							<th>Hiệu quả cao</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL SYN THERM 22L</td>
+							<td>0.87</td>
+							<td>22</td>
+							<td>>190</td>
+							<td>370</td>
+							<td><-40</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+						</tr>
+						<tr>
+							<td>SHL SYN THERM 32L</td>
+							<td>0.87</td>
+							<td>32</td>
+							<td>>200</td>
+							<td>462</td>
+							<td><-35</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="ban_tong_hop_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Chỉ số độ nhớt</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Tự bốc cháy</th>
+							<th>Điểm đông đặc (°C)</th>
+							<th>Ăn mòn Đồng</th>
+							<th>Chống oxi hóa</th>
+							<th>Bốc hơi thấp</th>
+							<th>Hiệu quả cao</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL THERM 22S</td>
+							<td>0.86</td>
+							<td>22</td>
+							<td>>200</td>
+							<td>-</td>
+							<td><-35</td>
+							<td>1</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+							<td>✓</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="product_info">
+				<section class="product-info">
+					<h3>Đặc Điểm Nổi Bật Của Dầu Truyền Nhiệt</h3>
+					<p>
+						Dầu truyền nhiệt là sản phẩm chuyên dụng trong các hệ thống trao đổi nhiệt công nghiệp, được sản xuất từ dầu
+						gốc chất lượng cao kết hợp với các phụ gia ổn định nhiệt và chống oxy hóa. Sản phẩm mang lại khả năng dẫn
+						nhiệt vượt trội, giúp duy trì nhiệt độ ổn định và hiệu quả trong quá trình vận hành của các thiết bị trao
+						đổi nhiệt. Dầu truyền nhiệt SHL thích hợp cho nhiều ứng dụng công nghiệp như hóa chất, thực phẩm, và gia
+						công cơ khí.
+					</p>
+					<ul>
+						<li>
+							<strong>Khả năng dẫn nhiệt tối ưu:</strong>
+							Đảm bảo hiệu suất truyền nhiệt cao, giúp kiểm soát nhiệt độ chính xác trong các hệ thống trao đổi nhiệt.
+						</li>
+						<li>
+							<strong>Ổn định ở nhiệt độ cao:</strong>
+							Dầu truyền nhiệt duy trì tính ổn định hóa học và không phân hủy ngay cả ở nhiệt độ cao, kéo dài tuổi thọ
+							sản phẩm.
+						</li>
+						<li>
+							<strong>Không tạo cặn:</strong>
+							Sản phẩm được thiết kế để ngăn ngừa sự hình thành cặn bám, giúp bảo vệ thiết bị và giảm thiểu chi phí bảo
+							trì.
+						</li>
+						<li>
+							<strong>Chống oxy hóa hiệu quả:</strong>
+							Dầu có khả năng chống oxy hóa cao, giúp duy trì chất lượng dầu và hiệu suất trong suốt thời gian sử dụng.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-uses">
+					<h3>Công Dụng Của Dầu Truyền Nhiệt</h3>
+					<p>
+						Dầu truyền nhiệt SHL được thiết kế để sử dụng trong các hệ thống gia nhiệt và trao đổi nhiệt công nghiệp,
+						đảm bảo hiệu quả hoạt động bền bỉ và an toàn. Sản phẩm giúp kiểm soát nhiệt độ chính xác, nâng cao hiệu suất
+						thiết bị và giảm thiểu các rủi ro vận hành.
+					</p>
+					<ul>
+						<li>
+							<strong>Hỗ trợ hệ thống trao đổi nhiệt:</strong>
+							Dầu truyền nhiệt đảm bảo hiệu suất tối đa cho các hệ thống trao đổi nhiệt trong nhà máy hóa chất, nhà máy
+							chế biến thực phẩm, và công nghiệp gia nhiệt.
+						</li>
+						<li>
+							<strong>Ứng dụng trong sưởi ấm và làm mát:</strong>
+							Phù hợp cho cả hệ thống gia nhiệt và làm mát, giúp duy trì nhiệt độ ổn định trong các dây chuyền sản xuất.
+						</li>
+						<li>
+							<strong>Bảo vệ thiết bị:</strong>
+							Giảm nguy cơ hao mòn và sự cố thiết bị nhờ khả năng chống oxy hóa và không tạo cặn của dầu.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-applications">
+					<h3>Ứng Dụng Thực Tiễn</h3>
+					<p>
+						Dầu truyền nhiệt SHL được sử dụng rộng rãi trong các hệ thống trao đổi nhiệt công nghiệp, mang lại hiệu quả
+						cao trong các ứng dụng sau:
+					</p>
+					<ul>
+						<li>
+							<strong>Ngành hóa chất và dược phẩm:</strong>
+							Hỗ trợ các hệ thống gia nhiệt và làm mát trong quy trình sản xuất hóa chất và dược phẩm.
+						</li>
+						<li>
+							<strong>Ngành chế biến thực phẩm:</strong>
+							Được sử dụng trong các hệ thống gia nhiệt để đảm bảo an toàn thực phẩm và hiệu suất cao.
+						</li>
+						<li>
+							<strong>Ngành công nghiệp luyện kim:</strong>
+							Dầu truyền nhiệt hỗ trợ các quy trình gia nhiệt trong sản xuất thép và hợp kim.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-storage">
+					<h3>Hướng Dẫn Bảo Quản</h3>
+					<p>
+						Để đảm bảo chất lượng và hiệu quả sử dụng của dầu truyền nhiệt SHL, cần tuân thủ các hướng dẫn bảo quản sau:
+					</p>
+					<ul>
+						<li>
+							<strong>Lưu trữ nơi khô ráo và thoáng mát:</strong>
+							Tránh tiếp xúc với ánh nắng trực tiếp và nhiệt độ cao để giữ ổn định chất lượng dầu.
+						</li>
+						<li>
+							<strong>Kiểm tra định kỳ:</strong>
+							Theo dõi tình trạng dầu thường xuyên để phát hiện các dấu hiệu nhiễm bẩn hoặc suy giảm chất lượng.
+						</li>
+						<li>
+							<strong>Thay dầu đúng định kỳ:</strong>
+							Thực hiện thay dầu theo khuyến cáo của nhà sản xuất để duy trì hiệu suất tối ưu.
+						</li>
+						<li>
+							<strong>Tránh tiếp xúc với tạp chất:</strong>
+							Đảm bảo dầu không bị nhiễm bẩn bởi nước, bụi hoặc các tạp chất khác.
+						</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+		<script>
+			document.querySelectorAll('.oil_type').forEach((button) => {
+				button.addEventListener('click', function () {
+					document.querySelectorAll('.oil_type').forEach((btn) => btn.classList.remove('active'));
+					this.classList.add('active');
+				});
+			});
+			window.onload = function () {
+				const tab = getQueryParam('tab');
+				if (tab) {
+					showTable(tab);
+					document.getElementById(tab).classList.add('active');
+				} else {
+					showTable('khoang');
+					document.getElementById('khoang').classList.add('active');
+				}
+			};
+			function getQueryParam(param) {
+				const urlParams = new URLSearchParams(window.location.search);
+				return urlParams.get(param);
+			}
+			const tables = {
+				khoang: document.getElementById('khoang_table'),
+				tong_hop: document.getElementById('tong_hop_table'),
+				ban_tong: document.getElementById('ban_tong_hop_table'),
+			};
+			function showTable(tableId) {
+				for (let key in tables) {
+					tables[key].style.display = 'none';
+				}
+				tables[tableId].style.display = 'block';
+				tables[tableId].style.animation = 'faded_left 0.5s ease-in-out';
+			}
+			document.getElementById('khoang').addEventListener('click', function () {
+				showTable('khoang');
+			});
+			document.getElementById('tong_hop').addEventListener('click', function () {
+				showTable('tong_hop');
+			});
+			document.getElementById('ban_tong').addEventListener('click', function () {
+				showTable('ban_tong');
+			});
+		</script>
+	</body>
+</html>

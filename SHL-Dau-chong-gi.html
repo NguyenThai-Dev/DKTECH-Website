@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/products.css" />
+		<link rel="icon" href="./css/img/DKTECH-Favicon.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=oil_barrel" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<title>THIẾT BỊ CÔNG NGHIỆP DKTECH VIỆT NAM</title>
+		<script src="./js/script.js" async></script>
+		<script src="./js/products.js" defer></script>
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<nav id="navbar"></nav>
+		<nav id="c-circle-nav" class="c-circle-nav"></nav>
+		<main>
+			<header>
+				<div>
+					<a href="./index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+							<path
+								d="M 24.001953 4.0039062 C 23.233953 4.0039062 22.466359 4.2963125 21.880859 4.8828125 L 0.88085938 25.882812 C -0.29114062 27.055812 -0.29114062 28.950047 0.88085938 30.123047 C 2.0058594 31.256047 3.809375 31.295859 4.984375 30.255859 L 6.1347656 29.109375 C 6.3307656 28.922375 6.6457969 28.922375 6.8417969 29.109375 C 7.0367969 29.309375 7.0367969 29.629406 6.8417969 29.816406 L 5.828125 30.828125 C 5.574125 31.081125 5.2969531 31.29575 5.0019531 31.46875 L 5.0019531 47.003906 L 4.9980469 47.001953 C 3.8970469 47.001953 0.99804688 47.229766 0.99804688 47.509766 C 0.99804687 47.775766 3.8970469 48.001953 4.9980469 48.001953 L 5.0019531 48 L 5.0019531 48.001953 L 42.998047 48.001953 L 42.998047 48 L 43.003906 48.001953 C 44.104906 48.001953 47.003906 47.775766 47.003906 47.509766 C 47.003906 47.229766 44.104906 47.001953 43.003906 47.001953 L 42.998047 47.005859 L 42.996094 31.46875 C 42.703094 31.29575 42.426781 31.081125 42.175781 30.828125 L 41.162109 29.814453 C 40.967109 29.627453 40.967109 29.307422 41.162109 29.107422 C 41.358109 28.920422 41.673141 28.920422 41.869141 29.107422 L 43.019531 30.255859 C 44.195531 31.295859 45.996047 31.254094 47.123047 30.121094 C 48.295047 28.948094 48.295047 27.055813 47.123047 25.882812 L 39.003906 17.761719 L 39.003906 10.001953 L 40.005859 9.0019531 L 40.005859 8.0019531 L 33.003906 8.0019531 L 33.003906 9.0019531 L 34.003906 10.001953 L 34.003906 11.349609 L 35.841797 13.189453 C 36.036797 13.376453 36.036797 13.696484 35.841797 13.896484 C 35.645797 14.083484 35.330766 14.083484 35.134766 13.896484 L 26.123047 4.8828125 C 25.537547 4.2963125 24.769953 4.0039062 24.001953 4.0039062 z M 24 6.0058594 C 24.256 6.0058594 24.512531 6.103375 24.707031 6.296875 L 45.707031 27.296875 C 46.098031 27.682875 46.098031 28.321984 45.707031 28.708984 C 45.318031 29.095984 44.683922 29.095984 44.294922 28.708984 L 24.708984 9.1210938 C 24.317984 8.7340937 23.685922 8.7340937 23.294922 9.1210938 L 3.7070312 28.708984 C 3.3180313 29.094984 2.6839219 29.094984 2.2949219 28.708984 C 1.9039219 28.322984 1.9039219 27.683875 2.2949219 27.296875 L 23.294922 6.296875 C 23.489422 6.103375 23.744 6.0058594 24 6.0058594 z M 24.003906 21.001953 C 27.110906 21.001953 29.915469 22.214766 31.855469 24.134766 C 32.051469 24.334766 32.052422 24.641797 31.857422 24.841797 C 31.662422 25.041797 31.346391 25.041797 31.150391 24.841797 C 29.402391 23.108797 26.852906 22.001953 24.003906 22.001953 C 21.151906 22.001953 18.600562 23.108797 16.851562 24.841797 C 16.655562 25.041797 16.339531 25.041797 16.144531 24.841797 C 15.949531 24.641797 15.952438 24.334766 16.148438 24.134766 C 18.090438 22.214766 20.894906 21.001953 24.003906 21.001953 z M 18.994141 26.001953 L 29.001953 26.001953 L 29.001953 44.001953 L 18.994141 44.001953 L 18.994141 26.001953 z M 20.498047 31.001953 C 20.222047 31.001953 19.998047 31.229766 19.998047 31.509766 L 19.998047 38.482422 C 19.998047 38.749422 20.222047 38.974609 20.498047 38.974609 C 20.773047 38.974609 20.998047 38.749422 20.998047 38.482422 L 20.998047 31.509766 C 20.998047 31.229766 20.773047 31.001953 20.498047 31.001953 z M 17.001953 45.001953 L 31.001953 45.001953 C 31.551953 45.001953 32.001953 45.454953 32.001953 46.001953 L 32.001953 47.001953 L 16.001953 47.001953 L 16.001953 46.001953 C 16.001953 45.454953 16.449953 45.001953 17.001953 45.001953 z"></path>
+						</svg>
+						Trang chủ/
+					</a>
+					<a href="./Dau-nhot-chinh-hang.html">Dầu nhớt chính hãng/</a>
+					<a href="SHL-KOREA-PRODUCTS.html">SHL KOREA/</a>
+					<a href="Dau-cat-got-pha-nuoc.html" id="page_location">Dầu chống gỉ</a>
+				</div>
+			</header>
+			<aside id="header_product_slide_info">
+				<div class="slider">
+					<div class="slides">
+						<img src="./css/Oil img/SHL SPINDLE V10.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SAMLEX HP 5025V.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SAMLEX WAXY 70A.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SPINDLE V5.jpg" alt="" class="slide_img" />
+						<img src="./css/Oil img/SHL SYNTHDRO 32AW.jpg" alt="" class="slide_img" />
+					</div>
+					<div class="navigation">
+						<button id="prev">&#10094;</button>
+						<button id="next">&#10095;</button>
+					</div>
+					<div class="dots"></div>
+				</div>
+				<div class="info">
+					<h1 class="product_type">SHL</h1>
+					<h1 class="product_name">Dầu chống gỉ</h1>
+					<p class="product_overview">
+						Dầu chống gỉ
+						<span>SHL Rust Preventive Oil</span>
+						là sản phẩm chuyên dụng, được làm từ dầu gốc chất lượng cao kết hợp với phụ gia chống gỉ và mài mòn. Dầu
+						mang lại khả năng bảo vệ bề mặt kim loại khỏi oxy hóa và ăn mòn, kéo dài tuổi thọ của các chi tiết gia công.
+						Sản phẩm có tính ổn định cao, không tạo bọt và dễ sử dụng trong nhiều phương pháp như phun, ngâm, hoặc quét.
+						Với khả năng tạo lớp màng dầu mỏng và bền, dầu SHL chống gỉ lý tưởng cho các ứng dụng bảo quản linh kiện và
+						thiết bị kim loại trong điều kiện khắc nghiệt hoặc lưu trữ lâu dài.
+					</p>
+					<div id="buy_product">
+						<div id="dub-arrow">
+							<a href="Contact.html">Đặt hàng ngay!</a>
+						</div>
+						<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+					</div>
+				</div>
+			</aside>
+			<aside id="change_oil_type">
+				<button id="loai_dung_moi" class="oil_type">Loại dung môi</button>
+				<button id="loai_mo" class="oil_type">Loại mỡ chống gỉ</button>
+				<button id="loai_dau" class="oil_type">Loại dầu</button>
+				<button id="loai_pha_nuoc" class="oil_type">Loại pha nước</button>
+			</aside>
+			<section id="loai_dung_moi_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Độ dày màng dầu (μm)</th>
+							<th>Chu kỳ chống gỉ</th>
+							<th>Test phun muối (giờ)</th>
+							<th>Phương pháp sử dụng</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL SAMLEX 2256 (S)</td>
+							<td>Nâu</td>
+							<td>0.86</td>
+							<td>5.7</td>
+							<td>>110</td>
+							<td>6~7</td>
+							<td><1 tháng</td>
+							<td>8</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX 2212T</td>
+							<td>Nâu</td>
+							<td>0.79</td>
+							<td>1.2</td>
+							<td>>45</td>
+							<td>-</td>
+							<td>1 – 2 tháng</td>
+							<td>12</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX 4616S</td>
+							<td>Nâu</td>
+							<td>0.80</td>
+							<td>1.6</td>
+							<td>>40</td>
+							<td>2~3</td>
+							<td>3~4 tháng</td>
+							<td>36</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX 5060GD</td>
+							<td>Nâu</td>
+							<td>0.77</td>
+							<td>1.5</td>
+							<td>>60</td>
+							<td>1~2</td>
+							<td>3~4 tháng</td>
+							<td>36</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX 48M</td>
+							<td>Nâu</td>
+							<td>0.80</td>
+							<td>2.5</td>
+							<td>>80</td>
+							<td>2~3</td>
+							<td>4~6 tháng</td>
+							<td>48</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX HP 5025V</td>
+							<td>Nâu</td>
+							<td>0.81</td>
+							<td>2.5</td>
+							<td>>40</td>
+							<td>3~4</td>
+							<td>4~6 tháng</td>
+							<td>48</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX 5120K</td>
+							<td>Nâu</td>
+							<td>0.82</td>
+							<td>3.2</td>
+							<td>>40</td>
+							<td>4~5</td>
+							<td>6 tháng</td>
+							<td>120</td>
+							<td>Phun, Ngâm, Quét</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="loai_mo_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Test xuyên tĩnh (25°C)</th>
+							<th>Điểm nóng chảy</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Điểm nhỏ giọt</th>
+							<th>Chu kỳ chống gỉ</th>
+							<th>Test phun muối (giờ)</th>
+							<th>Phương pháp sử dụng</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL SAMLEX WAXY 70A</td>
+							<td>Nâu</td>
+							<td>207</td>
+							<td>65</td>
+							<td>>250</td>
+							<td>73</td>
+							<td>>12 tháng</td>
+							<td>>150</td>
+							<td>Quét</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="loai_dau_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Độ dày màng dầu (μm)</th>
+							<th>Chu kỳ chống gỉ</th>
+							<th>Test phun muối (giờ)</th>
+							<th>Phương pháp sử dụng</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL SAMLEX 13</td>
+							<td>Nâu</td>
+							<td>0.88</td>
+							<td>13</td>
+							<td>>150</td>
+							<td>─</td>
+							<td><1 tháng</td>
+							<td>12</td>
+							<td>Ngâm, Quét</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="loai_pha_nuoc_table" class="table_info">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>Ngoại quan</th>
+							<th>Tỷ trọng (15/4°C)</th>
+							<th>Độ nhớt (40°C)</th>
+							<th>Điểm chớp cháy (°C)</th>
+							<th>Độ dày màng dầu (μm)</th>
+							<th>Chu kỳ chống gỉ</th>
+							<th>Test phun muối (giờ)</th>
+							<th>Phương pháp sử dụng</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SHL SAMLEX WED 300K</td>
+							<td>Màu trắng trong suốt</td>
+							<td>1.05</td>
+							<td>10</td>
+							<td>29</td>
+							<td>0a</td>
+							<td>&lt;1 tuần</td>
+							<td>─</td>
+							<td>Phun, Ngâm</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX WED 500K</td>
+							<td>Màu trắng trong suốt</td>
+							<td>1.07</td>
+							<td>10</td>
+							<td>42</td>
+							<td>0a</td>
+							<td>&lt;1 tuần</td>
+							<td>─</td>
+							<td>Phun, Ngâm</td>
+						</tr>
+						<tr>
+							<td>SHL SAMLEX WED 2000</td>
+							<td>Màu vàng nhạt</td>
+							<td>1.03</td>
+							<td>8.1</td>
+							<td>38</td>
+							<td>0a</td>
+							<td>&lt;1 tuần</td>
+							<td>─</td>
+							<td>Phun, Ngâm</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="product_info">
+				<section class="product-info">
+					<h3>Đặc Điểm Nổi Bật Của Dầu Chống Gỉ</h3>
+					<p>
+						Dầu chống gỉ là sản phẩm chuyên dụng trong bảo vệ bề mặt kim loại khỏi các tác động của môi trường như độ
+						ẩm, oxy hóa, và ăn mòn. Sử dụng dầu chống gỉ giúp kéo dài tuổi thọ của các linh kiện kim loại và đảm bảo
+						hiệu suất ổn định trong suốt quá trình sử dụng hoặc lưu trữ. Được sản xuất từ dầu gốc chất lượng cao, kết
+						hợp với các phụ gia chống gỉ tiên tiến, sản phẩm này đáp ứng được các tiêu chuẩn khắt khe trong ngành công
+						nghiệp.
+					</p>
+					<ul>
+						<li>
+							<strong>Khả năng bảo vệ bề mặt vượt trội:</strong>
+							Dầu tạo thành một lớp màng bảo vệ mỏng và bền trên bề mặt kim loại, ngăn chặn sự xâm nhập của độ ẩm và các
+							yếu tố gây gỉ sét.
+						</li>
+						<li>
+							<strong>Thích hợp với nhiều loại kim loại:</strong>
+							Sản phẩm này tương thích với nhiều loại kim loại như thép hợp kim, nhôm, đồng, và các hợp kim khác, mang
+							lại tính linh hoạt cao trong ứng dụng.
+						</li>
+						<li>
+							<strong>Không tạo cặn và dễ sử dụng:</strong>
+							Dầu chống gỉ không để lại cặn bẩn sau khi sử dụng, giúp quá trình vệ sinh và bảo trì dễ dàng hơn. Có thể
+							sử dụng bằng nhiều phương pháp như phun, ngâm, hoặc quét.
+						</li>
+						<li>
+							<strong>Hiệu quả trong điều kiện khắc nghiệt:</strong>
+							Khả năng chống gỉ vượt trội ngay cả trong môi trường có độ ẩm cao hoặc tiếp xúc trực tiếp với các hóa chất
+							ăn mòn.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-uses">
+					<h3>Công Dụng Của Dầu Chống Gỉ</h3>
+					<p>
+						Dầu chống gỉ được thiết kế để bảo vệ các linh kiện và thiết bị kim loại trong suốt quá trình vận hành hoặc
+						lưu trữ dài hạn. Nó đóng vai trò quan trọng trong việc giảm thiểu các chi phí bảo trì và thay thế, đồng thời
+						đảm bảo tính ổn định cho các hệ thống công nghiệp.
+					</p>
+					<ul>
+						<li>
+							<strong>Bảo vệ linh kiện trong quá trình vận chuyển:</strong>
+							Dầu tạo một lớp màng bảo vệ hiệu quả, đảm bảo các chi tiết máy móc không bị ăn mòn khi vận chuyển qua
+							những khu vực có điều kiện thời tiết khắc nghiệt.
+						</li>
+						<li>
+							<strong>Lưu trữ dài hạn:</strong>
+							Phù hợp để bảo quản các linh kiện kim loại trong kho bãi hoặc các môi trường lưu trữ dài hạn, giúp ngăn
+							ngừa sự hình thành gỉ sét.
+						</li>
+						<li>
+							<strong>Ứng dụng trong sản xuất:</strong>
+							Dầu chống gỉ được sử dụng phổ biến trong các nhà máy sản xuất linh kiện, giúp bảo vệ sản phẩm trong giai
+							đoạn chờ lắp ráp hoặc vận hành.
+						</li>
+						<li>
+							<strong>Sử dụng trong các ngành công nghiệp:</strong>
+							Dầu chống gỉ được ứng dụng rộng rãi trong các ngành công nghiệp như ô tô, cơ khí chính xác, sản xuất thiết
+							bị điện tử, và chế tạo khuôn mẫu.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-applications">
+					<h3>Ứng Dụng Thực Tiễn</h3>
+					<p>
+						Dầu chống gỉ là sản phẩm không thể thiếu trong các hoạt động gia công CNC, giúp bảo vệ máy móc và linh kiện
+						kim loại trong suốt quá trình sản xuất và lưu trữ. Sản phẩm này mang lại hiệu quả tối ưu trong các tình
+						huống sau:
+					</p>
+					<ul>
+						<li>
+							<strong>Gia công CNC chính xác:</strong>
+							Bảo vệ bề mặt kim loại khỏi gỉ sét trong quá trình gia công CNC liên tục, đảm bảo chất lượng sản phẩm cuối
+							cùng đạt tiêu chuẩn cao nhất.
+						</li>
+						<li>
+							<strong>Lưu trữ phôi gia công:</strong>
+							Ngăn ngừa sự hình thành gỉ sét trên phôi kim loại trước khi đưa vào gia công hoặc trong các giai đoạn chờ
+							xử lý.
+						</li>
+						<li>
+							<strong>Bảo trì và bảo dưỡng máy CNC:</strong>
+							Dầu chống gỉ giúp bảo vệ các chi tiết máy CNC khỏi oxy hóa và hao mòn do môi trường, kéo dài tuổi thọ và
+							giảm thiểu chi phí sửa chữa.
+						</li>
+						<li>
+							<strong>Bảo quản dao cụ và phụ kiện:</strong>
+							Đảm bảo các loại dao cụ CNC như dao phay, dao tiện không bị gỉ sét khi không sử dụng, duy trì độ sắc bén
+							và hiệu suất làm việc.
+						</li>
+					</ul>
+				</section>
+
+				<section class="product-storage">
+					<h3>Hướng Dẫn Bảo Quản</h3>
+					<p>Để đảm bảo dầu chống gỉ đạt hiệu quả tối đa, người sử dụng cần tuân thủ các hướng dẫn bảo quản sau:</p>
+					<ul>
+						<li>
+							<strong>Lưu trữ nơi khô ráo:</strong>
+							Tránh ánh nắng trực tiếp và các nguồn nhiệt cao để giữ ổn định chất lượng sản phẩm.
+						</li>
+						<li>
+							<strong>Đậy kín sau khi sử dụng:</strong>
+							Đảm bảo nắp đậy chặt để ngăn dầu tiếp xúc với không khí và độ ẩm, tránh làm giảm hiệu quả chống gỉ.
+						</li>
+						<li>
+							<strong>Không để lẫn tạp chất:</strong>
+							Kiểm tra dầu thường xuyên để đảm bảo không bị nhiễm bẩn bởi bụi hoặc nước, giúp duy trì tính ổn định của
+							dầu.
+						</li>
+						<li>
+							<strong>Thay thế định kỳ:</strong>
+							Theo dõi và thay mới dầu theo khuyến cáo của nhà sản xuất để đảm bảo hiệu quả tối ưu.
+						</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+		<script>
+			document.querySelectorAll('.oil_type').forEach((button) => {
+				button.addEventListener('click', function () {
+					document.querySelectorAll('.oil_type').forEach((btn) => btn.classList.remove('active'));
+					this.classList.add('active');
+				});
+			});
+			window.onload = function () {
+				const tab = getQueryParam('tab');
+				if (tab) {
+					showTable(tab);
+					document.getElementById(tab).classList.add('active');
+				} else {
+					showTable('loai_dung_moi');
+					document.getElementById('loai_dung_moi').classList.add('active');
+				}
+			};
+			function getQueryParam(param) {
+				const urlParams = new URLSearchParams(window.location.search);
+				return urlParams.get(param);
+			}
+			const tables = {
+				loai_dung_moi: document.getElementById('loai_dung_moi_table'),
+				loai_mo: document.getElementById('loai_mo_table'),
+				loai_dau: document.getElementById('loai_dau_table'),
+				loai_pha_nuoc: document.getElementById('loai_pha_nuoc_table'),
+			};
+			function showTable(tableId) {
+				for (let key in tables) {
+					tables[key].style.display = 'none';
+				}
+				tables[tableId].style.display = 'block';
+				tables[tableId].style.animation = 'faded_left 0.5s ease-in-out';
+			}
+			document.getElementById('loai_dung_moi').addEventListener('click', function () {
+				showTable('loai_dung_moi');
+			});
+			document.getElementById('loai_mo').addEventListener('click', function () {
+				showTable('loai_mo');
+			});
+			document.getElementById('loai_dau').addEventListener('click', function () {
+				showTable('loai_dau');
+			});
+			document.getElementById('loai_pha_nuoc').addEventListener('click', function () {
+				showTable('loai_pha_nuoc');
+			});
+		</script>
+	</body>
+</html>

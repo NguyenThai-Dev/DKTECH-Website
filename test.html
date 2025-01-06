@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Information</title>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+	</head>
+	<body>
+		<h1>Product Information</h1>
+
+		<!-- Template for product -->
+		<script id="product-template" type="text/x-handlebars-template">
+			<h2>{{name}}</h2>
+			<p>{{description}}</p>
+
+			<h3>Features:</h3>
+			<ul>
+				{{#each features}}
+					<li>{{@key}}: {{this}}</li>
+				{{/each}}
+			</ul>
+
+			<h3>Ingredients:</h3>
+			<ul>
+				{{#each ingredients}}
+					<li>{{this}}</li>
+				{{/each}}
+			</ul>
+		</script>
+
+		<!-- Container to render the product information -->
+		<div id="product-container"></div>
+
+		<script>
+			// Example data for products
+			const products = {
+				product1: {
+					name: 'Tectyl Oil',
+					description: 'A premium oil with amine-free properties.',
+					features: {
+						amineFree: true,
+						highViscosity: true,
+						antiWear: true,
+					},
+					ingredients: ['Base Oil', 'Additives'],
+				},
+				product2: {
+					name: 'Tectyl Oil Premium',
+					description: 'A premium oil with enhanced anti-oxidation properties.',
+					features: {
+						amineFree: false,
+						highViscosity: true,
+						antiWear: true,
+						antiOxidation: true,
+					},
+					ingredients: ['Base Oil', 'Advanced Additives'],
+				},
+			};
+
+			// Function to load and render product using Handlebars
+			function loadProduct(productKey) {
+				const product = products[productKey];
+
+				const source = document.getElementById('product-template').innerHTML;
+				const template = Handlebars.compile(source);
+
+				const html = template(product);
+				document.getElementById('product-container').innerHTML = html;
+			}
+
+			// Automatically load the product based on URL parameter
+			window.onload = function () {
+				const urlParams = new URLSearchParams(window.location.search);
+				const productKey = urlParams.get('product') || 'product1'; // Default to product1 if no param
+				loadProduct(productKey);
+			};
+		</script>
+	</body>
+</html>

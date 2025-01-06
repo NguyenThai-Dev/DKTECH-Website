@@ -12,7 +12,7 @@ app.use(cors());
 // Thiết lập API Key cho SendGrid
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware để xử lý dữ liệu từ form
 app.use(bodyParser.urlencoded({ extended: true }));
