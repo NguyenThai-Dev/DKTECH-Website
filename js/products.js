@@ -59,7 +59,7 @@ prevBtn.addEventListener('click', () => {
 
 	setTimeout(() => {
 		isClicking = false;
-	}, 1000);
+	}, 500);
 
 	index = (index - 1 + imgList.length) % imgList.length;
 	updateSlider();
@@ -71,7 +71,7 @@ nextBtn.addEventListener('click', () => {
 
 	setTimeout(() => {
 		isClicking = false;
-	}, 1000);
+	}, 500);
 
 	index = (index + 1) % imgList.length;
 	updateSlider();

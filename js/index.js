@@ -100,7 +100,7 @@ document.querySelectorAll('.product-list-container').forEach((slider) => {
 
 	let currentIndex = 0;
 	let visibleItems = parseInt(slider.getAttribute('data-visible-items'));
-	const margin = '1rem';
+	let margin = '1rem';
 
 	// Cập nhật lại số lượng sản phẩm hiển thị
 	const updateVisibleItems = () => {
@@ -118,7 +118,7 @@ document.querySelectorAll('.product-list-container').forEach((slider) => {
 
 		// Cập nhật CSS linh động cho sản phẩm
 		productItems.forEach((item, index) => {
-			item.style.flex = `0 0 calc(100% / ${visibleItems} - 0.75*${margin})`;
+			item.style.flex = `0 0 calc(100% / ${visibleItems} - ${(visibleItems - 1) / visibleItems} * ${margin})`;
 		});
 		slider.setAttribute('data-visible-items', visibleItems);
 		updateSliderPosition();

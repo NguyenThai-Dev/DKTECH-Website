@@ -441,6 +441,7 @@ footer {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		gap: 10px;
 		justify-content: space-around;
 
 		#quick_link,
@@ -519,7 +520,7 @@ footer {
 		transform: translateX(100%);
 	}
 	to {
-		transform: translateX(-700%);
+		transform: translateX(-800%);
 	}
 }
 
@@ -545,13 +546,16 @@ footer {
 		text-align: center;
 	}
 
+	#footer_info {
+		width: 100%;
+	}
+
 	#quick_link,
 	#support_list,
 	#services_list {
 		padding: 1rem;
 		box-sizing: border-box;
 		text-align: center;
-		align-self: center;
 	}
 }
 
